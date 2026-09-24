@@ -1,0 +1,2 @@
+method,group,prediction_mm,eligible_video_captures,fallback,reference_mm,error_mm,relative_error_pct,abs_error_pct
+raw_video_reacquisition_centerline_adapter_post_area_guard_v1,GP_Ip_8.8mm_closed_R10_single_refY,8.851170981427963,2,False,8.799999952,0.05117102942796237,0.5814889739440576,0.5814889739440576

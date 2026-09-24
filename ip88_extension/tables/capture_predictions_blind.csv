@@ -1,0 +1,3 @@
+group,capture,n_selected_valid,ring_dynamic,eligible,prediction_mm,fallback_reason,post_retries,post_missing
+GP_Ip_8.8mm_closed_R10_single_refY,GP_Ip_8.8mm_closed_R10_single_refY_004,5,0.10878553772075339,True,9.053601882767088,,0,0
+GP_Ip_8.8mm_closed_R10_single_refY,GP_Ip_8.8mm_closed_R10_single_refY_005,4,0.0921036061126137,True,8.648740080088837,,0,0

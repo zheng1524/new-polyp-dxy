@@ -1,0 +1,10 @@
+capture,bin,frame_index,file,Dxy_mm,C,P,shape,ring_source,outcome
+GP_Ip_8.8mm_closed_R10_single_refY_004,1,43,overlays/GP_Ip_8.8mm_closed_R10_single_refY_004_bin1.jpg,9.403218540465874,0.9780244761868676,0.9729004058694972,A/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_004,2,274,overlays/GP_Ip_8.8mm_closed_R10_single_refY_004_bin2.jpg,8.87367260971468,0.9247609366764552,0.9882973935103728,B/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_004,3,422,overlays/GP_Ip_8.8mm_closed_R10_single_refY_004_bin3.jpg,9.158129836680232,0.99241768579492,0.9254682784850812,B/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_004,4,646,overlays/GP_Ip_8.8mm_closed_R10_single_refY_004_bin4.jpg,8.551062341612916,0.9553062045782732,0.9877297553432924,A/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_004,5,699,overlays/GP_Ip_8.8mm_closed_R10_single_refY_004_bin5.jpg,8.51614657315099,0.9580414459713442,0.979772021780062,A/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_005,2,172,overlays/GP_Ip_8.8mm_closed_R10_single_refY_005_bin2.jpg,8.612579442227068,0.979660923652777,0.9755611112671704,B/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_005,3,291,overlays/GP_Ip_8.8mm_closed_R10_single_refY_005_bin3.jpg,8.44729955993368,0.966129927817879,0.989507494646681,A/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_005,4,342,overlays/GP_Ip_8.8mm_closed_R10_single_refY_005_bin4.jpg,8.685951442374654,0.9641981768610064,0.9906269827536482,A/circle,centerline_adapted_inner,raw_kept
+GP_Ip_8.8mm_closed_R10_single_refY_005,5,513,overlays/GP_Ip_8.8mm_closed_R10_single_refY_005_bin5.jpg,8.912614510582484,0.9704088450182116,0.9881409640868062,B/circle,centerline_adapted_inner,raw_kept

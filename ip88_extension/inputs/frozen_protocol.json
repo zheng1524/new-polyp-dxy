@@ -1,0 +1,18 @@
+{
+  "scope": "one formerly excluded group; frozen 38-group mainline remains untouched",
+  "videos": [
+    "/home/liu/polyp_research/smart_endoscope_20260805/raw/GP_Ip_8.8mm_closed_R10_single_refY_004.mp4",
+    "/home/liu/polyp_research/smart_endoscope_20260805/raw/GP_Ip_8.8mm_closed_R10_single_refY_005.mp4"
+  ],
+  "raw_sampling": "discard first/last 5%; split each source video into 5 equal temporal bins; decode 50 uniformly spaced source frames/bin (500 frames total)",
+  "segmentation": "frozen INIT model, 256px argmax, existing old.run_segmentation",
+  "standard_ring": "unchanged current process_mask_with_calibration; use native inner ellipse if present",
+  "missing_inner_adapter": "only when standard inner ellipse is absent: reuse current outer ellipse and current skeleton-midline ellipse; inner center=2*mid_center-outer_center and inner radii=2*mid_radii-outer_radii. This is annular centerline symmetry, not a new fitter or calibrated correction.",
+  "adapter_validity": "outer and mid must exist; both inferred inner radii must be positive; inferred inner axes must be smaller than outer axes. No GT-derived thresholds.",
+  "measurement": "unchanged current_rectified_scale and unmodified V2 process_view/choose/choose_geometry; L_px=Dxy/scale",
+  "selection": "per bin highest existing sharpness among V2-valid frames, then frozen post-capture relaxed area guard v1 (global formal-S0 p2 C/P) repairs only an extreme selected capture; B1 unchanged",
+  "area_support": "C=|M∩E|/|M|; P=|M∩(E\\U)|/|E\\U|, U=ring dilation plus fitted annulus; exact existing area_consistency routine",
+  "aggregation": "B1=10*median(L_px)/median(ring_px), >=4 selected valid bins, ring p95/p5-1>=.05; group median of eligible video captures",
+  "old_V2_R3": "not read, not used, not compared until final narrative only",
+  "GT_used_before_freeze": false
+}

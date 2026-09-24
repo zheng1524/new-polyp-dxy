@@ -1,0 +1,8 @@
+{
+  "sequence": "frozen raw result_sharp5 selection first; post-check at capture completion, before unchanged B1 aggregation",
+  "threshold": "global formal S0/R0 p2 for C and P, calculated without GT",
+  "capture_trigger": "at least four original V2-valid/support-assessed selected bins and median(C)<p2(C) OR median(P)<p2(P)",
+  "repair": "only triggered capture, and only its individual raw frames below either p2 threshold: retry first frozen V2-valid candidate by existing sharpness passing both p2 thresholds",
+  "unchanged": "all non-triggered captures retain raw selected frames byte-for-byte in value; INIT/V2/ring/L/scale/sharpness/B1/capture replacement/group fusion unchanged",
+  "gt_used": false
+}

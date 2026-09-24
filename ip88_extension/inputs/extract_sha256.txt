@@ -1,0 +1,2 @@
+2e2c61eb6670b62478a1f2b7ca74fabdbc44f25043a660f75108588ff68edc16  inputs/frozen_protocol.json
+e8456bb5dd433a08bb39e932767ed49b774531de3b6a5108a260a5989f433843  inputs/reacquisition_manifest_blind.csv

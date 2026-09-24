@@ -1,0 +1,76 @@
+{
+  "mainline_id": "dxy_video_result_sharp5_post_capture_relaxed_area_guard_v1",
+  "status": "USER_PROMOTED_FROZEN_MAINLINE",
+  "promotion_date": "2026-09-22",
+  "scope": "research Dxy video-measurement chain on the immutable SYNC4/S0 38-of-39 evaluation scope; this does not overwrite the separate historical result/ package",
+  "base_selector": "result_sharp5(raw): one frozen raw candidate per bin, maximum existing sharpness; V2 validity is checked after the raw choice",
+  "candidate_universe": {
+    "formal_dxy_videos": 79,
+    "bins_per_video": 5,
+    "raw_candidates": 9480,
+    "v2_valid_candidates": 6753,
+    "raw_selected_bins": 395,
+    "raw_selected_v2_valid_bins": 284
+  },
+  "geometry": {
+    "M": "full frozen INIT label-1 polyp mask",
+    "E": "frozen current V2 final chosen circle/ellipse; no refit or size correction",
+    "U": "dilated label-2 ring occlusion union fitted outer-minus-inner ring annulus",
+    "C": "area(M intersect E) / area(M)",
+    "P": "area(M intersect (E minus U)) / area(E minus U)"
+  },
+  "threshold_calibration": {
+    "source": "current-valid formal S0 original_V2_R0 views only; no GT",
+    "formal_views_assessed": 317,
+    "R2_contact_rescue_unassessed": 50,
+    "quantile": 0.02,
+    "C_threshold": 0.08503077259013787,
+    "P_threshold": 0.3175049108502854,
+    "same_threshold_for": "all ring sizes, Paris types, groups and captures"
+  },
+  "post_capture_rule": {
+    "support_population": "original raw-selected frames that are V2-valid and support-assessed",
+    "capture_precondition": "at least 4 support-assessed original selections",
+    "capture_trigger": "median(C) < C_threshold OR median(P) < P_threshold",
+    "individual_repair_trigger": "capture_trigger AND (C < C_threshold OR P < P_threshold)",
+    "replacement": "first frozen V2-valid candidate in that bin, sorted by existing sharpness descending then frame_index ascending, satisfying C >= C_threshold AND P >= P_threshold",
+    "no_replacement": "bin is missing",
+    "non_triggered_captures": "retain the raw selected frame exactly, including raw V2-invalid selections"
+  },
+  "aggregation_and_fusion": {
+    "B1": "R_mm * median(L_px selected valid bins) / median(ring_px selected valid bins)",
+    "capture_eligibility": "at least 4 selected valid bins and p95(ring_px)/p5(ring_px)-1 >= 0.05",
+    "formal_integration": "replace only eligible video_keyframe capture rows; retain photo/S0 rows; group prediction is the median of formal current-valid rows"
+  },
+  "frozen_blind_run": {
+    "triggered_captures": 1,
+    "repaired_bins": 3,
+    "post_missing_bins": 0,
+    "eligible_video_captures": 53,
+    "fallback_video_captures": 26,
+    "formal_video_captures_replaced": 48,
+    "changed_groups_vs_raw": ["GP_Ip_12.0mm_closed_R10_single_refY"]
+  },
+  "final_evaluation_after_blind_freeze": {
+    "coverage": "38/39",
+    "median_absolute_error_pct": 4.778762,
+    "MAE_mm": 0.628158,
+    "mean_absolute_relative_error_pct": 6.660374,
+    "median_signed_error_pct": 0.867927,
+    "within5_pct": 52.631579,
+    "within10_pct": 76.315789,
+    "p90_pct": 14.897911,
+    "p95_pct": 19.379603,
+    "max_pct": 23.685499
+  },
+  "sha256": {
+    "mainline_script": "c7fb012601fa325552ba7e7371e2d510aba2370a64079d7256a360544dd53726",
+    "raw_candidate_features_blind": "4631c3e427b8c400c96152d00460bd2bfe27cc10423f246c7f93e7b7f24a4e84",
+    "raw_selected_frames_blind": "952e2a2f4a83c4c6f7803c664cb4d91c616ca5073e7ad53912553b25461ae5db",
+    "raw_group_predictions_blind": "cb6c86e232ff1ea509d7edf3d772329efe5d9a71ae8df909c0a3937c88a7372a",
+    "frame_area_support": "7b662866f070d1df51107a64ca1c1789f25f9dd2f907d712b900373344fa6db2",
+    "formal_s0_area_support": "f270ad171866b52d8b7b3df8f2d7dc138027e9047a4cc92d8550f54428e9a142",
+    "immutable_scale_manifest": "e4b7105a183b8f37f0ea10bb34462e05ce17e4713b0f0eb4be488f3800f589fe",
+    "blind_output_list": "inputs/blind_sha256.txt"
+  }
+}
