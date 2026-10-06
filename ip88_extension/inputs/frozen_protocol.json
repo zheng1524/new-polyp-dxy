@@ -1,8 +1,8 @@
 {
   "scope": "one formerly excluded group; frozen 38-group mainline remains untouched",
   "videos": [
-    "/home/liu/polyp_research/smart_endoscope_20260805/raw/GP_Ip_8.8mm_closed_R10_single_refY_004.mp4",
-    "/home/liu/polyp_research/smart_endoscope_20260805/raw/GP_Ip_8.8mm_closed_R10_single_refY_005.mp4"
+    "${DXY_VIDEO_DIR}/GP_Ip_8.8mm_closed_R10_single_refY_004.mp4",
+    "${DXY_VIDEO_DIR}/GP_Ip_8.8mm_closed_R10_single_refY_005.mp4"
   ],
   "raw_sampling": "discard first/last 5%; split each source video into 5 equal temporal bins; decode 50 uniformly spaced source frames/bin (500 frames total)",
   "segmentation": "frozen INIT model, 256px argmax, existing old.run_segmentation",

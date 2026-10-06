@@ -70,8 +70,8 @@ Ip4 的单一小component和IIa14的局部大/小ellipse虽可在逐帧观察到
 未修改 INIT segmentation/mask、ring fitting、V2 A/B/circle/ellipse、endpoint、L_px、ring_px、scale、sharpness、B1或任何正式 `result/` 内容。新脚本只读取上一轮已缓存的C/P并实施后置选择：[run_post_capture_guard.py](scripts/run_post_capture_guard.py)。
 
 ```bash
-/home/liu/miniconda3/envs/息肉检测/bin/python scripts/run_post_capture_guard.py blind
-/home/liu/miniconda3/envs/息肉检测/bin/python scripts/run_post_capture_guard.py evaluate
+python scripts/run_post_capture_guard.py blind
+python scripts/run_post_capture_guard.py evaluate
 ```
 
 脚本 SHA256：`c7fb012601fa325552ba7e7371e2d510aba2370a64079d7256a360544dd53726`。

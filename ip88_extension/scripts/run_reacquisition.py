@@ -10,10 +10,10 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import importlib.util
 import json
 import math
 import multiprocessing as mp
+import os
 import sys
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
@@ -22,44 +22,30 @@ import cv2
 import numpy as np
 import pandas as pd
 
-ROOT = Path('/home/liu/polyp_research')
-OUT = ROOT/'experiments/dxy_ip88_raw_video_reacquisition_20260923'
-AUDIT = ROOT/'experiments/dxy_scale_video_audit_20260919'
-RAW = ROOT/'experiments/dxy_raw_video_frame_selection_20260921'
-MAIN = ROOT/'experiments/dxy_post_capture_relaxed_area_guard_20260922'
-V2ROOT = ROOT/'experiments/dxy_head_fitting_v2_20260918'
-OCC = ROOT/'experiments/dxy_core_ellipse_occupancy_20260921'
-MODEL = ROOT/'experiments/dxy_remeasurement_20260917/02_segmentation/model'
+REPO = Path(__file__).resolve().parents[2]
+DATA_ROOT = Path(os.environ.get('DXY_DATA_ROOT', REPO/'data'))
+OUT = Path(os.environ.get('DXY_OUTPUT_ROOT', REPO/'outputs/ip88_reacquisition'))
+AUDIT = Path(os.environ.get('DXY_AUDIT_ROOT', DATA_ROOT/'scale_video_audit'))
+MAIN = Path(os.environ.get('DXY_BASE38_ROOT', REPO/'base38'))
+MODEL = Path(os.environ.get('DXY_MODEL_DIR', DATA_ROOT/'models/init_segmentation'))
 GROUP = 'GP_Ip_8.8mm_closed_R10_single_refY'
-VIDEOS = [ROOT/'smart_endoscope_20260805/raw'/f'{GROUP}_{n:03d}.mp4' for n in (4, 5)]
+VIDEO_DIR = Path(os.environ.get('DXY_VIDEO_DIR', DATA_ROOT/'raw_videos'))
+VIDEOS = [VIDEO_DIR/f'{GROUP}_{n:03d}.mp4' for n in (4, 5)]
 for d in ('inputs', 'frames/images', 'frames/masks', 'frames/ring_raw',
           'frames/ring_adapted', 'tables', 'gallery/overlays'):
     (OUT/d).mkdir(parents=True, exist_ok=True)
 
-sys.path.insert(0, str(ROOT/'src'))
-sys.path.insert(0, str(V2ROOT/'scripts'))
-sys.path.insert(0, str(AUDIT/'scripts'))
-sys.path.insert(0, str(OCC/'scripts'))
+sys.path.insert(0, str(REPO/'src'))
 from polypseg.common import load_pretrained_model  # noqa: E402
 from polypseg.ring_fitting import (  # noqa: E402
     EllipseParams, load_ring_mask, preprocess_ring_mask, select_components,
     process_mask_with_calibration,
 )
-import v2 as v2mod  # noqa: E402
-import run_audit as aud  # noqa: E402
-from audit import area_consistency  # noqa: E402
-
-
-def module(name, path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    obj = importlib.util.module_from_spec(spec)
-    assert spec.loader
-    spec.loader.exec_module(obj)
-    return obj
-
-
-PREP = module('keyframe_prep', ROOT/'scripts/prepare_smart_endoscope_multiview_dataset.py')
-OLD = module('old_segmentation', ROOT/'smart_endoscope_20260805/scripts/run_old_method_v1.py')
+from dxy_s5cpag import frame_selection as PREP  # noqa: E402
+from dxy_s5cpag import v2 as v2mod  # noqa: E402
+from dxy_s5cpag import scale as aud  # noqa: E402
+from dxy_s5cpag.area_support import area_consistency  # noqa: E402
+from dxy_s5cpag.segmentation import run_segmentation  # noqa: E402
 
 PROTOCOL = {
     'scope': 'one formerly excluded group; frozen 38-group mainline remains untouched',
@@ -244,7 +230,7 @@ def measure(device: str) -> None:
     good = manifest[manifest.decode_valid.map(truth)]
     model = load_pretrained_model(str(MODEL), torch.device(device), local_files_only=True, strict=True)
     model.eval()
-    OLD.run_segmentation(model, torch.device(device), [(r.stem, Path(r.image_path)) for r in good.itertuples()], OUT/'frames/masks', 256, .5)
+    run_segmentation(model, torch.device(device), [(r.stem, Path(r.image_path)) for r in good.itertuples()], OUT/'frames/masks', 256, .5)
     del model
     if device.startswith('cuda'):
         torch.cuda.empty_cache()

@@ -210,8 +210,8 @@ absolute relative error = abs(relative error)
 首次重建：
 
 ```bash
-cd /home/liu/polyp_research
-PY=/home/liu/miniconda3/envs/息肉检测/bin/python
+cd <repository-root>
+PY=python
 $PY experiments/dxy_post_capture_relaxed_area_guard_20260922/scripts/run_post_capture_guard.py blind
 $PY experiments/dxy_post_capture_relaxed_area_guard_20260922/scripts/run_post_capture_guard.py evaluate
 ```

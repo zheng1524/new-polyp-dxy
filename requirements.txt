@@ -1,0 +1,12 @@
+# Versions observed in the frozen execution environment (2026-09), not upgrades.
+numpy==1.26.4
+pandas==2.2.3
+opencv-python==4.10.0.84
+scipy==1.15.3
+scikit-image==0.25.2
+Pillow==10.4.0
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+transformers==4.46.3
+safetensors==0.4.5
+matplotlib==3.9.2

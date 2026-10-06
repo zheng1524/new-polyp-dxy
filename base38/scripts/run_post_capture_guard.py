@@ -6,15 +6,16 @@ support across its already selected valid frames is in the formal-S0 p2 tail is
 opened for repair; then only its individually failing frames are retried.
 """
 from __future__ import annotations
-import argparse, hashlib, json, math
+import argparse, hashlib, json, math, os
 from pathlib import Path
 import pandas as pd
 
-ROOT=Path('/home/liu/polyp_research')
-RAW=ROOT/'experiments/dxy_raw_video_frame_selection_20260921'
-AREA=ROOT/'experiments/dxy_area_guarded_sharp5_20260922'
-AUDIT=ROOT/'experiments/dxy_scale_video_audit_20260919'
-OUT=ROOT/'experiments/dxy_post_capture_relaxed_area_guard_20260922'
+REPO=Path(__file__).resolve().parents[2]
+DATA_ROOT=Path(os.environ.get('DXY_DATA_ROOT',REPO/'data'))
+RAW=Path(os.environ.get('DXY_RAW_SELECTOR_ROOT',DATA_ROOT/'raw_selector'))
+AREA=Path(os.environ.get('DXY_AREA_GUARD_ROOT',DATA_ROOT/'area_guard'))
+AUDIT=Path(os.environ.get('DXY_AUDIT_ROOT',DATA_ROOT/'scale_video_audit'))
+OUT=Path(os.environ.get('DXY_OUTPUT_ROOT',REPO/'outputs/base38'))
 for d in ('inputs','tables'):(OUT/d).mkdir(parents=True,exist_ok=True)
 PROTOCOL={
  'sequence':'frozen raw result_sharp5 selection first; post-check at capture completion, before unchanged B1 aggregation',

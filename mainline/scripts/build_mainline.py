@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """Freeze S5-CPAG-39 and render its evaluated 39-group error ranking."""
 from __future__ import annotations
-import hashlib, json
+import argparse, hashlib, json, os
 from pathlib import Path
 import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 
-ROOT=Path('/home/liu/polyp_research')
-OUT=ROOT/'experiments/dxy_mainline_s5_cpag39_20260923'
-BASE=ROOT/'experiments/dxy_post_capture_relaxed_area_guard_20260922'
-IP88=ROOT/'experiments/dxy_ip88_raw_video_reacquisition_20260923'
+REPO=Path(__file__).resolve().parents[2]
+OUT=Path(os.environ.get('DXY_OUTPUT_ROOT',REPO/'outputs/mainline'))
+BASE=Path(os.environ.get('DXY_BASE38_ROOT',REPO/'base38'))
+IP88=Path(os.environ.get('DXY_IP88_ROOT',REPO/'ip88_extension'))
 for d in ('inputs','tables','figures'):(OUT/d).mkdir(parents=True,exist_ok=True)
 
 def sha(p):
@@ -53,4 +53,10 @@ def build():
  md=['# S5-CPAG-39 组误差排序','',f"coverage **39/39**；median **{met['median_absolute_error_pct']:.3f}%**；MAE **{met['MAE_mm']:.3f} mm**；p95 **{met['p95_pct']:.3f}%**；max **{met['max_pct']:.3f}%**。",'', '图中从上到下为绝对相对误差从高到低。青色 R5，橙色 R10；紫色星号为 Ip8 R10 的原视频中心线内环适配，其余 38 组均来自原冻结 S5-CPAG 主线。','', '![误差排序](figures/group_abs_error_descending.png)','', '- 完整排序 CSV：`tables/group_errors_descending.csv`','- 机器可读定义：`MAINLINE_MANIFEST.json`']
  (OUT/'ERROR_RANKING.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
  print(met)
-if __name__=='__main__':build()
+if __name__=='__main__':
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--output-root',type=Path)
+ args=ap.parse_args()
+ if args.output_root:
+  OUT=args.output_root
+  for d in ('inputs','tables','figures'):OUT.joinpath(d).mkdir(parents=True,exist_ok=True)
+ build()
