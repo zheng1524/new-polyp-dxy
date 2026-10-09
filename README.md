@@ -22,6 +22,10 @@
 7. **formal fusion**：只替换符合 B1 条件的 video capture；photo/S0 保持；按 group median 融合。
 8. **Ip8.8 R10**：唯一此前未覆盖的组从两段原始视频密集重采。当 ring 因息肉贴住内缘而没有闭合内孔时，用当前 outer ellipse 和 skeleton-midline ellipse 按 `inner = 2×mid − outer` 补全 inner。V2、C/P、B1 不改变，旧 V2 R3 不使用。
 
+基础 38 组的“同一规则 + 统一 fallback”边界，及四个没有 video replacement
+的组为何仍是同一 S5 路径，见 [`base38/S5_UNIFIED_RULE_AUDIT.md`](base38/S5_UNIFIED_RULE_AUDIT.md)。
+Ip8.8 R10 是唯一明确标注、可从基础规则范围中排除的输入扩展，而非隐式特例。
+
 ## 目录
 
 ```text
