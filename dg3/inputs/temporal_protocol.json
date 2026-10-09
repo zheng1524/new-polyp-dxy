@@ -1,0 +1,9 @@
+{
+  "GT_used_before_evaluation": false,
+  "centers": "frozen D-G3 selected frames",
+  "neighbors": "raw-video ±3 frames, no selection",
+  "B1": "median framewise R*p/r",
+  "B2": "Huber through-origin p=k*r with repeat-derived sigma",
+  "B3": "B2 with Huber soft weights of adjacent log-ratio residual",
+  "aggregation": "bin then frozen capture median>=4/fusion"
+}

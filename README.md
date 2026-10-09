@@ -1,8 +1,15 @@
-# S5-CPAG-39：可复现 Dxy 视频测量主线
+# 可复现 Dxy 视频测量：S5-CPAG-39 与 D-G3 冻结候选
 
-这是当前冻结的 Dxy 研究主线：**Sharp5 + Capture-level Post-area Guard，39 组范围**。
+仓库保存两个可独立核查的冻结候选：正式 S5-CPAG-39，以及未晋升的 D-G3 研究候选。S5 仍是当前冻结主线；D-G3 被并列归档，以便复核其几何收益与总体指标未改善这一负面结果。
 
-冻结结果：coverage **39/39**，median absolute error **4.577%**，MAE **0.613 mm**，p95 **19.263%**，max **23.685%**。结果证据、盲流程 SHA 与关键可视化均被保留；原始视频、患者图像、模型权重和大型候选缓存不上传。
+冻结结果：coverage **39/39**，median absolute error **4.577%**，MAE **0.613 mm**，p95 **19.263%**，max **23.685%**。结果证据、盲流程 SHA 与关键可视化均被保留；完整原始视频、完整患者图像集、模型权重和大型候选缓存不上传。D-G3 目录只有用户明确授权的极小代表原图子集。
+
+|候选|角色|coverage|median absolute error|MAE|p95|max|
+|---|---|---:|---:|---:|---:|---:|
+|S5-CPAG-39|正式冻结主线|39/39|4.577%|0.613 mm|19.263%|23.685%|
+|D-G3 / B0|冻结研究候选，未晋升|39/39|4.981%|0.631 mm|20.220%|23.685%|
+
+详见 [`dg3/README.md`](dg3/README.md)。D-G3 含 5 张已授权代表原图和 5 张 S5-vs-D-G3 汇报 PNG；它们受数据治理约束，不代表完整数据集，也不得任意再分发。
 
 ## 算法流程
 
@@ -21,11 +28,13 @@
 src/
   polypseg/                 INIT 模型加载、ring fitting、标定与仿射尺度工具
   dxy_s5cpag/               V2、scale、C/P、B1、centerline fallback、指标
+  dxy_dg3/                  D-G3 的完整自定义源码闭包（Quality-aware、ring-adjacency、G3）
 model_code/init_segmentation/ 冻结 INIT 的 UNet3+ 自定义模型源码（无权重）
 scripts/run_raw_selector.py 原始视频候选、Sharp5、B1 与 formal fusion
 base38/                     38 组 S5-CPAG 冻结协议、脚本、盲输出和验证
 ip88_extension/             Ip8 原视频重采集代码、证据与结果
 mainline/                   39 组最终 manifest、误差 CSV/图、构建脚本
+dg3/                        D-G3 冻结盲表、指标、报告和有限汇报素材
 configs/                    外部数据/模型路径说明
 tests/                      无数据 smoke tests
 ```
@@ -84,6 +93,7 @@ python mainline/scripts/build_mainline.py --output-root outputs/mainline
 ```bash
 python -m unittest discover -s tests -v
 python mainline/scripts/build_mainline.py --output-root /tmp/dxy-mainline-check
+python -m dxy_dg3 verify
 ```
 
 前者测试核心几何、C/P、B1 和中心线重建；后者只用已提交的表重建最终 group 排序。最终结果见 [`mainline/ERROR_RANKING.md`](mainline/ERROR_RANKING.md)。

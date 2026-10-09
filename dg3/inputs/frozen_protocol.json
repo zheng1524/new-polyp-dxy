@@ -1,0 +1,21 @@
+{
+  "baseline": "S7-FMD39/G0 and independent G3 experiment",
+  "GT_used_before_evaluation": false,
+  "candidate_pool": "existing raw Sharp5 candidates, unchanged five bins/video and existing start/end trim",
+  "stage1": {
+    "top_k_existing_sharpness": 3,
+    "ROI": "polyp interior and edge plus ring edge; no background pixels",
+    "tenengrad_keep_ratio": 0.75,
+    "laplacian_keep_ratio": 0.5
+  },
+  "stage2": {
+    "frozen_segmentation_and_ring": "reused cached masks/ring fits",
+    "ring_component_fraction_min": 0.8,
+    "ring_frontality_min": 0.35,
+    "trusted_original_edge_fraction_min": 0.35,
+    "trusted_arc_min": 1,
+    "ranking": "trusted fraction, trusted arc length, ROI Tenengrad, existing sharpness"
+  },
+  "no_gt_tuning": true,
+  "aggregation": "frozen per-frame Dxy; capture median >=4 valid; formal group fusion/fallback unchanged"
+}

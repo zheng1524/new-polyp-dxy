@@ -1,0 +1,11 @@
+asset_type,filename,group,purpose,contains_complete_dataset
+raw_frame,GP_Is_14.0mm_closed_R10_single_refY_005-raw03-10.jpg,GP_Is_14.0mm_closed_R10_single_refY,representative Is/R10 raw frame for geometry review,false
+raw_frame,GP_IIa_14.0mm_closed_R10_single_refY_005-raw02-23.jpg,GP_IIa_14.0mm_closed_R10_single_refY,representative IIa/R10 raw frame for geometry review,false
+raw_frame,GP_Ip_2.9mm_closed_R10_single_refY_005-raw02-05.jpg,GP_Ip_2.9mm_closed_R10_single_refY,small Ip raw frame for missing-data audit,false
+raw_frame,GP_Ip_4.0mm_closed_R5_single_refY_006-raw01-18.jpg,GP_Ip_4.0mm_closed_R5_single_refY,small Ip raw frame for missing-data audit,false
+raw_frame,GP_IIa_22.0mm_closed_R5_single_refY_005-raw05-07.jpg,GP_IIa_22.0mm_closed_R5_single_refY,representative broad-body control,false
+comparison_png,GP_Is_14.0mm_closed_R10_single_refY.png,GP_Is_14.0mm_closed_R10_single_refY,S5 versus D-G3 degradation review,false
+comparison_png,GP_IIa_14.0mm_closed_R10_single_refY.png,GP_IIa_14.0mm_closed_R10_single_refY,S5 versus D-G3 degradation review,false
+comparison_png,GP_Ip_2.9mm_closed_R10_single_refY.png,GP_Ip_2.9mm_closed_R10_single_refY,S5 versus D-G3 small-polyp review,false
+comparison_png,GP_Ip_4.0mm_closed_R5_single_refY.png,GP_Ip_4.0mm_closed_R5_single_refY,S5 versus D-G3 small-polyp review,false
+comparison_png,GP_Ip_8.8mm_closed_R5_single_refY.png,GP_Ip_8.8mm_closed_R5_single_refY,S5 versus D-G3 centerline-fallback review,false
