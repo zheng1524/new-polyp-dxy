@@ -1,0 +1,8 @@
+{
+  "quality_source": "experiments/roi_sharpness_frame_selection_v2/scripts/roi_quality.py",
+  "quality_sha256": "7dd5c9834b5926242d519f99d2297e29d5faaab9b0dd6184177f1e11bb47284f",
+  "candidate_source": "scripts/prepare_smart_endoscope_multiview_dataset.py",
+  "candidate_source_sha256": "4a71feb6559842a5c3758aa5d6f9522e5d73e208e91037cb31e80ea403154ebc",
+  "selection": "C_joint, unchanged approved ROI quality, per-video 5 segments x24 candidates, at most2 per segment; spacing0.1s",
+  "extension39": "frozen 20-frame supplied manifest; no group-name switch in new-video selection"
+}

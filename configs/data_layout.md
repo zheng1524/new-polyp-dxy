@@ -1,3 +1,5 @@
+> **历史归档**：此文描述S5/DG3旧版本；当前DXY-MID正式入口见仓库根README。
+
 # External data layout
 
 The code accepts paths through environment variables so that no machine-local

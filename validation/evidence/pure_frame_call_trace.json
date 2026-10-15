@@ -1,0 +1,867 @@
+{
+  "calls": [
+    {
+      "file": "dxy_mid/_engine/boundary_v7.py",
+      "function": "<listcomp>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/boundary_v7.py",
+      "function": "<setcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/boundary_v7.py",
+      "function": "extract",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/boundary_v7.py",
+      "function": "runs",
+      "count": 30
+    },
+    {
+      "file": "dxy_mid/_engine/contracts.py",
+      "function": "ellipse_axes",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/contracts.py",
+      "function": "provenance",
+      "count": 7
+    },
+    {
+      "file": "dxy_mid/_engine/cross_ring_boundary.py",
+      "function": "<dictcomp>",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/cross_ring_boundary.py",
+      "function": "<genexpr>",
+      "count": 3559
+    },
+    {
+      "file": "dxy_mid/_engine/cross_ring_boundary.py",
+      "function": "<listcomp>",
+      "count": 716
+    },
+    {
+      "file": "dxy_mid/_engine/cross_ring_boundary.py",
+      "function": "<setcomp>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/cross_ring_boundary.py",
+      "function": "label",
+      "count": 1422
+    },
+    {
+      "file": "dxy_mid/_engine/cross_ring_boundary.py",
+      "function": "make_data",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/cross_ring_boundary.py",
+      "function": "run",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/deliver.py",
+      "function": "<genexpr>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/deliver.py",
+      "function": "<listcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/deliver.py",
+      "function": "<setcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/deliver.py",
+      "function": "audit_row",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/exact_v2.py",
+      "function": "<genexpr>",
+      "count": 18
+    },
+    {
+      "file": "dxy_mid/_engine/exact_v2.py",
+      "function": "gate",
+      "count": 8
+    },
+    {
+      "file": "dxy_mid/_engine/exact_v2.py",
+      "function": "geometry",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/exact_v2_slice.py",
+      "function": "boundary",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/gate.py",
+      "function": "<genexpr>",
+      "count": 76
+    },
+    {
+      "file": "dxy_mid/_engine/gate.py",
+      "function": "<lambda>",
+      "count": 16
+    },
+    {
+      "file": "dxy_mid/_engine/gate.py",
+      "function": "<listcomp>",
+      "count": 24
+    },
+    {
+      "file": "dxy_mid/_engine/gate.py",
+      "function": "choose",
+      "count": 8
+    },
+    {
+      "file": "dxy_mid/_engine/gate.py",
+      "function": "run",
+      "count": 8
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "<genexpr>",
+      "count": 7372
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "<listcomp>",
+      "count": 26
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "fit",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "huber_loss",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "make_data",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "metrics",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "q_intersections",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "sample_plan",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "sector",
+      "count": 6
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_competition.py",
+      "function": "uniform",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/geometry_component.py",
+      "function": "traced_call",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/native_boundary.py",
+      "function": "<dictcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/native_boundary.py",
+      "function": "<listcomp>",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/native_boundary.py",
+      "function": "<setcomp>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/native_boundary.py",
+      "function": "boundary_native",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/observable_boundary.py",
+      "function": "<dictcomp>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/observable_boundary.py",
+      "function": "<listcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/observable_boundary.py",
+      "function": "<setcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/observable_boundary.py",
+      "function": "boundary_native",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/observable_boundary.py",
+      "function": "observable_P",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "<lambda>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "<listcomp>",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "as_dict",
+      "count": 5
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "component_area_ellipse",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "ellipse_from_cv2",
+      "count": 804
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "ellipse_residuals",
+      "count": 805
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "extract_component_boundaries",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "fit_ellipse_ransac",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "fit_single_component",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "preprocess_ring_mask",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "quality_checks",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "sample_contour_points",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "select_components",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_ring_fitting.py",
+      "function": "split_mask_if_needed",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_single_view_measurement.py",
+      "function": "<genexpr>",
+      "count": 6
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_single_view_measurement.py",
+      "function": "<listcomp>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_single_view_measurement.py",
+      "function": "_mean_angle_deg",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_single_view_measurement.py",
+      "function": "build_affine_rectifier",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_single_view_measurement.py",
+      "function": "ellipse_from_dict",
+      "count": 5
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_single_view_measurement.py",
+      "function": "sample_ellipse_points",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/polypseg_single_view_measurement.py",
+      "function": "transform_points",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/pq_geometry_component.py",
+      "function": "<listcomp>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/pq_geometry_component.py",
+      "function": "<setcomp>",
+      "count": 9
+    },
+    {
+      "file": "dxy_mid/_engine/pq_geometry_component.py",
+      "function": "normalise_audit",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/pq_geometry_component.py",
+      "function": "run",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/pq_review.py",
+      "function": "<genexpr>",
+      "count": 14
+    },
+    {
+      "file": "dxy_mid/_engine/pq_review.py",
+      "function": "<listcomp>",
+      "count": 14
+    },
+    {
+      "file": "dxy_mid/_engine/pq_review.py",
+      "function": "choose_body",
+      "count": 7
+    },
+    {
+      "file": "dxy_mid/_engine/q_arc_filter.py",
+      "function": "<dictcomp>",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/q_arc_filter.py",
+      "function": "<listcomp>",
+      "count": 14
+    },
+    {
+      "file": "dxy_mid/_engine/q_arc_filter.py",
+      "function": "<setcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/q_arc_filter.py",
+      "function": "analyze",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/q_arc_filter.py",
+      "function": "apply",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/q_distance_selection.py",
+      "function": "<genexpr>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/q_distance_selection.py",
+      "function": "<listcomp>",
+      "count": 7
+    },
+    {
+      "file": "dxy_mid/_engine/q_distance_selection.py",
+      "function": "audit_distance_variants",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/q_distance_selection.py",
+      "function": "choose_distance_body",
+      "count": 7
+    },
+    {
+      "file": "dxy_mid/_engine/q_distance_selection.py",
+      "function": "recover_conflicted_candidates",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/q_evidence_policy.py",
+      "function": "run_policy",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/raw_g3_helpers.py",
+      "function": "beyond",
+      "count": 4266
+    },
+    {
+      "file": "dxy_mid/_engine/raw_g3_helpers.py",
+      "function": "ellipse_residual",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/raw_g3_helpers.py",
+      "function": "frac",
+      "count": 9947
+    },
+    {
+      "file": "dxy_mid/_engine/raw_g3_helpers.py",
+      "function": "ring_samples",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "<dictcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "<listcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "coords",
+      "count": 7
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "coverage",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "fill",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "fit",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "global_e",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "recover",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "ring_points",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "sample",
+      "count": 6
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "stability",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/ring_component.py",
+      "function": "validate",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/ring_holes.py",
+      "function": "run",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/run_competition.py",
+      "function": "<genexpr>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/run_competition.py",
+      "function": "<listcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/run_competition.py",
+      "function": "<setcomp>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/run_competition.py",
+      "function": "current_baseline",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/run_competition.py",
+      "function": "summary",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/scale.py",
+      "function": "run",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/soft_geometry.py",
+      "function": "<listcomp>",
+      "count": 6
+    },
+    {
+      "file": "dxy_mid/_engine/soft_geometry.py",
+      "function": "interval_residual",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/soft_geometry.py",
+      "function": "residual_true",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/soft_geometry.py",
+      "function": "vector",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/soft_geometry.py",
+      "function": "weights",
+      "count": 6
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "<genexpr>",
+      "count": 505
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "<listcomp>",
+      "count": 10
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "angular_bins",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "bin_overlap",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "circle_three",
+      "count": 360
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "component_records",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "contour",
+      "count": 8
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "coords",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "disk",
+      "count": 11
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "ellipse_mask",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "fit_circle",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "fit_ellipse",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v2.py",
+      "function": "span_degrees",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v2_candidates.py",
+      "function": "<listcomp>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v2_candidates.py",
+      "function": "local",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v2_candidates.py",
+      "function": "process_candidates",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v2_slice.py",
+      "function": "candidate_fit",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v81_components.py",
+      "function": "<dictcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v81_components.py",
+      "function": "existing_ring_check",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v81_components.py",
+      "function": "run_B",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v81_components_slice.py",
+      "function": "<dictcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v81_components_slice.py",
+      "function": "<listcomp>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v81_components_slice.py",
+      "function": "<setcomp>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v81_components_slice.py",
+      "function": "repair_boundary",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v82_boundary.py",
+      "function": "repair_boundary",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary.py",
+      "function": "<dictcomp>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary.py",
+      "function": "<genexpr>",
+      "count": 4266
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary.py",
+      "function": "<listcomp>",
+      "count": 7120
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary.py",
+      "function": "<setcomp>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary.py",
+      "function": "extract",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary.py",
+      "function": "reachable",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary_slice.py",
+      "function": "<genexpr>",
+      "count": 5688
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary_slice.py",
+      "function": "mode_component",
+      "count": 2844
+    },
+    {
+      "file": "dxy_mid/_engine/v83_boundary_slice.py",
+      "function": "smooth_normal",
+      "count": 1422
+    },
+    {
+      "file": "dxy_mid/_engine/v83_context.py",
+      "function": "current_boundary",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v84_boundary.py",
+      "function": "<dictcomp>",
+      "count": 9
+    },
+    {
+      "file": "dxy_mid/_engine/v84_boundary.py",
+      "function": "<genexpr>",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/_engine/v84_boundary.py",
+      "function": "<listcomp>",
+      "count": 16
+    },
+    {
+      "file": "dxy_mid/_engine/v84_boundary.py",
+      "function": "extract84",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v84_boundary.py",
+      "function": "make_data84",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v84_boundary.py",
+      "function": "trim_contact_arcs",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v84_pilot.py",
+      "function": "<genexpr>",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/v84_pilot.py",
+      "function": "<listcomp>",
+      "count": 3
+    },
+    {
+      "file": "dxy_mid/_engine/v84_pilot.py",
+      "function": "configs84",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v8_context.py",
+      "function": "<dictcomp>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v8_context.py",
+      "function": "<genexpr>",
+      "count": 6
+    },
+    {
+      "file": "dxy_mid/_engine/v8_context.py",
+      "function": "<listcomp>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/_engine/v8_context.py",
+      "function": "<setcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/_engine/v8_context.py",
+      "function": "variants_audit",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "<dictcomp>",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "<genexpr>",
+      "count": 1839
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "<lambda>",
+      "count": 4
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "<listcomp>",
+      "count": 5
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "_measure",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "measure_files",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "measure_frame",
+      "count": 1
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "sha256",
+      "count": 2
+    },
+    {
+      "file": "dxy_mid/pipeline.py",
+      "function": "validate",
+      "count": 1
+    }
+  ],
+  "source_id": "e6d8c970a5300f1ccfb6b3f1c0f57ce757d0bdfed50e022ff2eb65d3dd48a3d5",
+  "measurement_input_sha256": {
+    "image": "3e90bd5fcf4665457372c9e6b66980889c9ac87925a2afddb2527cdd61aab06e",
+    "mask": "46e88431de587f5bc8f22a3e3f219e3c4e3a586b0765f59c1752a9a81ba08759"
+  },
+  "unexpected_structured_reads": 0,
+  "GT_read": false,
+  "historical_prediction_fallback": 0
+}

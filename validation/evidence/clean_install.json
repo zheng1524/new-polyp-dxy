@@ -1,0 +1,9 @@
+{
+  "environment": "fresh venv, no system-site-packages",
+  "python": "3.10",
+  "torch_installed": false,
+  "installed_package": "site-packages/dxy_mid",
+  "working_directory": "outside repository",
+  "public_sample_passed": true,
+  "full790_frame_mask_recompute_passed": true
+}

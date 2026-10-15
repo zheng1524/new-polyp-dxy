@@ -1,0 +1,21 @@
+{
+  "source_checkpoint_sha256": "3db0150179ddd94e2acd629d21d59b7479a7c2db1244636f8312d6f4e314cb2a",
+  "exported_safetensors_sha256": "981aa596e8906edc4457219581c606d4a5a22bfc6f7e4924d3d9a4b9aff64464",
+  "source_experiment": "segmentation_20260917_init_vs_finetune/INIT",
+  "best_epoch": 13,
+  "architecture": "UNet3Plus + EfficientNet-B0",
+  "inter_ch": 64,
+  "out_channels": 3,
+  "class_map": {
+    "0": "background",
+    "1": "polyp",
+    "2": "ring"
+  },
+  "preprocessing": "RGB -> 256x256 bilinear -> /255; no mean/std normalization",
+  "weight_bytes": 52246340,
+  "weight_sha256": "981aa596e8906edc4457219581c606d4a5a22bfc6f7e4924d3d9a4b9aff64464",
+  "public_download_url": null,
+  "redistribution_license": "not established in existing records",
+  "architecture_code": "model_code/init_segmentation",
+  "architecture_code_matches_frozen": true
+}

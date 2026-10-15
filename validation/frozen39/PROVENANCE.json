@@ -1,0 +1,18 @@
+{
+  "source_experiment": "v9_1_short_Q_mid_median_20261014",
+  "source_files": {
+    "tables/frame_measurements_mm.csv": "9d21712505b0530314cd0839b42882b4068176165e5f7a30a402496572deebea",
+    "tables/group_results_all.csv": "57ac7323e03ea9fca2c3be0cb28a7b7e88a9fc66e4f4125f6c61d195fa39ad4c",
+    "tables/video_results_mm.csv": "b0208a0afc0ee4cce75606cb20081f05be9e6084d3e9853089e9fcfc0a7388fa",
+    "freeze/prediction_freeze.json": "beaa11f129f4151f1ee3a7e0785b2097ea3885187652135e5158528b139ddbc5"
+  },
+  "frame_count": 790,
+  "numeric": 757,
+  "ring_failed": 33,
+  "normal": 627,
+  "Q_recovery": 130,
+  "strict": 616,
+  "GT_mapping_correction": "Ip2.9 is Ip2.8; Is6.5 is IIa6.5; predictions unchanged",
+  "history_prediction_fallback": 0,
+  "portable_video_keys": "Original absolute video labels projected one-to-one to their filenames; source_id/stem/RNG unchanged."
+}
