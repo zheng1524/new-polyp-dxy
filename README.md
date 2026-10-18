@@ -6,6 +6,10 @@ DXY-MID已由人工确立为唯一正式主线，机器可读入口见[CURRENT_P
 
 **[39组完整Excel下载](mainline/tables/group_results.xlsx?raw=true)** · [39组CSV](mainline/tables/group_results.csv) · [逐视频结果](mainline/tables/video_results.csv) · [790帧与质量标记](validation/results/frame_measurements.csv)。有符号误差为`prediction − GT`，负值低估，正值高估。
 
+[11组不同误差水平的真实结果图集](docs/results_gallery/README.md)覆盖0～2%、2～5%、5～10%、10～15%及>15%案例，包括Q恢复、Ring失败及10mm漏判。[39组误差排序图](mainline/ERROR_RANKING.md)标出了这些案例；总体性能始终由全部39组计算。
+
+[正式主线发布技术报告](docs/FINAL_MAINLINE_RELEASE_REPORT.md)与[完整790帧独立回归证据](validation/evidence/final_mainline_20261018/full39/regression.json)记录最终验收；测量算法和GT未改变。
+
 仓库含既有单帧样例及**6组27帧真实JPEG与同帧mask**，其中一组提供两视频的全部20个冻结选帧。完整790帧、冻结权重及原视频仍有[分发限制](docs/DISTRIBUTION_REVIEW.md)，正式主线发布不等于全数据集Level 2已公开。
 
 39组来自硅胶模型回顾性研究，不能解释为临床泛化性能。GT为人工确认的可信尺寸基准，只在独立评价阶段读取，不参与预测生成或算法选择。
@@ -53,7 +57,7 @@ D_{\rm group}=\operatorname{median}_{video}(D_{\rm video})
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install '.[plot,test]'
+.venv/bin/python -m pip install '.[plot,test,report]'
 ```
 
 测量已有mask不需要Torch或GPU。核心依赖已在`pyproject.toml`锁定；CPU推荐4进程，BLAS/OpenMP各1线程。环境详情及可选视频推理栈见[环境/模型/数据](docs/DATA_MODEL.md)。
@@ -94,7 +98,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/reproduce_publ
 
 原图、0/1/2 mask、SHA256、时间戳、GT评价信息和命令见[公开案例](examples/reproduction_cases/README.md)。GT只在单独的评价文件中，不进入测量输入。27帧共约3.74 MiB，来自获准公开的实验室自制硅胶模型，不含患者数据。未公开原始视频或分割权重，故这些样例支持Level 1，不能据此宣称Level 2已公开。
 
-本轮[技术报告与验收证据](docs/PUBLIC_CASES_TECHNICAL_REPORT.md)、[简短人工摘要](docs/PUBLIC_CASES_HUMAN_REPORT.md)及[待决定公开资产](docs/PUBLIC_ASSETS_PENDING.json)分别记录复现范围、真实性检查和分发限制。
+公开案例阶段的[技术报告与验收证据](docs/PUBLIC_CASES_TECHNICAL_REPORT.md)、[简短人工摘要](docs/PUBLIC_CASES_HUMAN_REPORT.md)及[待决定公开资产](docs/PUBLIC_ASSETS_PENDING.json)分别记录复现范围、真实性检查和分发限制。
 
 ![真实Ring硬失败，保留NaN](docs/visualization/ring_failure.png)
 
@@ -140,10 +144,10 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/reproduce39.py
 |Normal-Gate / Q冲突恢复|627 / 130帧|
 |Strict稳定|616帧|
 |历史预测回退|0|
-|更正GT后的中位绝对相对误差 / MAE|4.4113% / 0.709224 mm|
+|中位绝对相对误差 / MAE|4.411327% / 0.709224 mm|
 |p95 / 最大绝对相对误差|14.7263% / 16.5656%|
 
-参考误差4.1915%、MAE0.7041 mm来自更正前的GT映射：两组Ip2.9实际为Ip2.8，Is6.5实际为IIa6.5。本次遵从人工确认的可靠GT更正映射，**没有改变预测去匹配旧误差**。逐帧/视频/组级迁移回归及失败原因以[回归证据](validation/frozen39/README.md)为准。所有数值覆盖都不等于测量必然正确。
+GT使用人工已确认的最终映射，原group_id仅保留输入关联；实际Paris和显示名称见正式39组表。逐帧/视频/组级回归及失败原因以[回归证据](validation/frozen39/README.md)为准。所有数值覆盖都不等于测量必然正确。
 
 ## 输出、质量与局限
 
@@ -153,4 +157,4 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/reproduce39.py
 
 ## 历史研究与溯源
 
-历史S5、G3、DG3及原Fusion已退出默认入口，保留在原目录以免破坏追踪；见[历史归档说明](legacy/README.md)。DXY-MID复用其中经过验证的底层源码，不读取其最终预测。迁移提取了真实可达数值函数，消除了实验文件夹运行依赖和运行时源码裁剪；[函数级来源表](docs/SOURCE_PROVENANCE.csv)记录原文件与哈希。独立三维重建研究不属于本仓库迁移范围，未作修改。
+历史S5、G3、DG3及原Fusion已退出默认入口；旧S5的mainline目录完整移至`legacy/S5_mainline_20261018`，旧方法测试也保留为归档测试，见[历史归档说明](legacy/README.md)。DXY-MID复用经过验证的底层源码，不读取其最终预测。迁移消除了实验文件夹运行依赖和运行时源码裁剪；[函数级来源表](docs/SOURCE_PROVENANCE.csv)保留溯源。独立三维重建研究未作修改。

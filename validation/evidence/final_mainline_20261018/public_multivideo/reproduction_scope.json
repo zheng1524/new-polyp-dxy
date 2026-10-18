@@ -1,0 +1,12 @@
+{
+  "case": "multivideo",
+  "published_subset_frames": 20,
+  "published_subset_groups": 1,
+  "numeric_subset_frames": 20,
+  "subset_numeric_groups": 1,
+  "complete_frozen_groups": [
+    "GP_Is_10.5mm_closed_R5_single_refY"
+  ],
+  "caution": "Only complete_frozen_groups reproduce full frozen group aggregation; other groups are mechanism subsets.",
+  "passed": true
+}

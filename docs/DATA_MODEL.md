@@ -2,7 +2,7 @@
 
 ## 运行环境
 
-参考环境为Ubuntu、Python 3.10、NumPy 1.26.4、SciPy 1.15.3、OpenCV 4.10.0.84、scikit-image 0.25.2、pandas 2.2.3、Pillow 10.4.0。`pip install '.[plot,test]'`安装锁定的核心版本与绘图/测试依赖。测量和790帧mask复算不需要GPU或PyTorch。推荐4个进程、BLAS/OpenMP各1线程；单进程约150 MiB，运行时受候选拟合复杂度影响。
+参考环境为Ubuntu、Python 3.10、NumPy 1.26.4、SciPy 1.15.3、OpenCV 4.10.0.84、scikit-image 0.25.2、pandas 2.2.3、Pillow 10.4.0。`pip install '.[plot,test,report]'`安装锁定的核心版本、绘图/测试及Excel报告依赖；报告使用openpyxl 3.1.5。测量和790帧mask复算不需要GPU或PyTorch。推荐4个进程、BLAS/OpenMP各1线程；单进程约150 MiB，运行时受候选拟合复杂度影响。
 
 新视频分割另装 `pip install '.[video]'`。已核验历史栈为PyTorch 2.5.1+cu121、torchvision 0.20.1+cu121、Transformers 4.46.3、safetensors 0.4.5。CPU可运行；CUDA版需匹配显卡驱动。PyTorch包的平台安装源应使用官方安装说明，不从本仓库下载不明二进制。
 
@@ -50,6 +50,9 @@ dataset/
 复现固定790帧时使用`--frame-manifest validation/frozen39/inputs.csv`，直接重放冻结帧号；保留原source_id/stem种子并核验图像、mask哈希。基础38组C_joint 770帧与扩展组既有20帧是明确的不同输入选择来源，不在数值测量中按组切换算法。
 
 ## 当前分发状态
+
+完整39组正式测量、误差Excel/CSV、逐视频及790帧数值质量记录已公开，见`mainline/tables/`和`validation/results/`。公开结果表不等于公开全部原图/mask；不以CSV重聚合冒充从原图独立测量。主线正式合并不受完整视频/模型尚未公开的影响。
+
 
 已提交既有单帧样例及`examples/reproduction_cases/`中的6组27帧真实JPEG/mask（约3.74 MiB）。其中Is 10.5 R5完整提供两视频全部20个冻结选帧；其余是明确标记的机制子集。可用`scripts/reproduce_public.py`独立重算，详见该目录README。
 

@@ -22,6 +22,15 @@ LABELS = {
  'n_input_videos':'输入视频数', 'n_valid_videos':'有效视频数', 'crosses_10mm':'是否错误跨越10mm',
  'classification_10mm':'10mm分类', 'history_prediction_fallback':'历史预测回退',
  'video':'视频ID', 'IQR_mm':'视频IQR（mm）', 'reason':'无效原因',
+ 'unstable_frames':'非Strict帧数', 'strict_only':'是否仅Strict诊断', 'mainline_id':'正式主线',
+ 'target_groups':'目标组数', 'valid_groups':'数值有效组数', 'input_frames':'总输入帧数',
+ 'valid_frames':'总有效帧数', 'ring_failed_frames':'总Ring失败帧数', 'normal_frames':'总Normal帧数',
+ 'Q_recovery_frames':'总Q恢复帧数', 'strict_frames':'总Strict帧数',
+ 'median_absolute_relative_error_pct':'中位绝对相对误差（%）', 'MAE_mm':'MAE（mm）',
+ 'p95_absolute_relative_error_pct':'P95绝对相对误差（%）', 'max_absolute_relative_error_pct':'最大绝对相对误差（%）',
+ 'within_10pct_count':'误差10%以内组数', 'within_10pct_percent':'误差10%以内比例（%）',
+ 'n_videos':'总视频数', 'threshold10_misclassified':'10mm误分类组数',
+ 'historical_prediction_fallback':'历史预测回退', 'GT_used_for_algorithm_selection':'是否用GT选择算法',
 }
 
 
@@ -145,6 +154,13 @@ def main():
         v.to_csv(args.output_root/'tables/video_results.csv',index=False)
         pd.DataFrame([m]).to_csv(args.output_root/'tables/metrics_summary.csv',index=False)
         workbook(d,v,m,args.output_root/'tables/group_results.xlsx')
+        manifest_path=args.output_root/'MAINLINE_MANIFEST.json'
+        if manifest_path.exists():
+            manifest=json.loads(manifest_path.read_text())
+            assert manifest['mainline_id']=='DXY-MID'
+            manifest['artifacts_sha256']={str(p.relative_to(args.output_root.parent)):sha(p) for p in sorted((args.output_root/'tables').glob('*'))}
+            manifest['metrics']=m
+            manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
     result=verify_files(d,v,m,args.output_root);print(json.dumps(dict(validation=result,metrics=m),ensure_ascii=False,indent=2))
 
 

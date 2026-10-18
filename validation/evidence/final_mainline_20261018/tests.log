@@ -1,0 +1,26 @@
+test_equal_video_weight_and_unstable_frames (test_dxy_mid.FrozenInterfaceTests) ... ok
+test_hard_ring_failure_is_NaN (test_dxy_mid.FrozenInterfaceTests) ... ok
+test_invalid_coordinates_and_config_rejected (test_dxy_mid.FrozenInterfaceTests) ... ok
+test_manifest_hash_and_duplicate_prevention (test_dxy_mid.FrozenInterfaceTests) ... ok
+test_native_mid_same_frame_and_radius_diameter (test_dxy_mid.FrozenInterfaceTests) ... ok
+test_short_Q_wrap_and_full_contour (test_dxy_mid.FrozenInterfaceTests) ... ok
+test_small_closed_hole_and_true_center (test_dxy_mid.FrozenInterfaceTests) ... ok
+test_frozen39_from_masks (test_dxy_mid_regression.DataRegression) ... skipped 'Full39 dataset not configured; public example remains mandatory'
+test_real_public_mask_example (test_dxy_mid_regression.DataRegression) ... Measured 1/1
+ok
+test_complete_CSV_Excel_and_frozen_arithmetic (test_official_mainline.OfficialMainline) ... ok
+test_current_README_links (test_official_mainline.OfficialMainline) ... ok
+test_gallery_points_axes_values_and_failure_are_real (test_official_mainline.OfficialMainline) ... ok
+test_machine_pointer_and_archive (test_official_mainline.OfficialMainline) ... ok
+test_Q_constraints_traceable_and_recovery_remains_unstable (test_public_cases.PublicActualGeometry) ... ok
+test_actual_geometry_and_quality_match_frozen (test_public_cases.PublicActualGeometry) ... ok
+test_real_ring_failure_is_not_a_measurement (test_public_cases.PublicActualGeometry) ... ok
+test_real_two_video_arithmetic_and_equal_weight_contract (test_public_cases.PublicActualGeometry) ... ok
+test_original_numerical_files_remain_frozen (test_public_cases.PublicDataIntegrity) ... ok
+test_public_assets_hashes_mask_ids_and_scope (test_public_cases.PublicDataIntegrity) ... ok
+test_real_failure_cli_compares_legitimate_missing_axis_columns (test_public_cases.PublicDataIntegrity) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 150.012s
+
+OK (skipped=1)

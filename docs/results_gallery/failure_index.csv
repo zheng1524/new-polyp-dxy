@@ -1,0 +1,2 @@
+group_id,source_id,figure,reason,Dxy_mm,checks_passed
+GP_Ip_10.3mm_closed_R5_single_refY,29b50f6d39d23a08ddc005045a6576444c189bfa927527333515c6b7c5d2cabb,figures/07_GP_Ip_10.3mm_closed_R5_single_refY_Ring_failure.png,ring_recovery_unreliable,,True

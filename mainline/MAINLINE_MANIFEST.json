@@ -44,7 +44,7 @@
     "strict_frames": 616,
     "median_absolute_relative_error_pct": 4.4113269936186095,
     "MAE_mm": 0.7092238117097175,
-    "p95_absolute_relative_error_pct": 14.726267315399117,
+    "p95_absolute_relative_error_pct": 14.726267315399115,
     "max_absolute_relative_error_pct": 16.56564027757371,
     "within_10pct_count": 30,
     "within_10pct_percent": 76.92307692307693,
@@ -66,7 +66,7 @@
   "distribution_limits": "Only reviewed public examples are bundled; full39 raw inputs, full videos and model weights remain restricted",
   "artifacts_sha256": {
     "mainline/tables/group_results.csv": "9af10ba20a7435242265cf845c657197bec1163ea4ba5c914d9cc6f3ac1aead9",
-    "mainline/tables/group_results.xlsx": "c7167040d3257ff9b326ac92c554d47324dc8999d0cf1d1b4858d35abf393966",
+    "mainline/tables/group_results.xlsx": "1f104bd748e86169b993736da81fcb628e41a19a0750cb524098662fabe3801e",
     "mainline/tables/metrics_summary.csv": "afe2abcf18ea18e067b2edef2ffa1b9caf8c9b7a3e79a032251e6e4b39217225",
     "mainline/tables/video_results.csv": "398bed800b053ee1328dea92e293a3f6bb642f0bc62eb4f7d9b15dd67a31c06b"
   }

@@ -1,3 +1,5 @@
+> 历史迁移阶段记录。当前正式主线状态以`mainline/MAINLINE_MANIFEST.json`和[正式发布报告](FINAL_MAINLINE_RELEASE_REPORT.md)为准；完整视频/权重的分发限制仍保留，但不再作为主线合并阻碍。
+
 # DXY-MID主线迁移技术报告
 
 ## 范围及当前发布状态

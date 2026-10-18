@@ -1,0 +1,3 @@
+group,video,n_input_frames,n_valid_frames,median_mm,IQR_mm,strict_frames,unstable_frames,Q_conflict_recovery_frames,reason,strict_only
+GP_Is_10.5mm_closed_R5_single_refY,GP_Is_10.5mm_closed_R5_single_refY_004.mp4,10,10,10.27487032526753,0.10791266330461369,10,0,0,,False
+GP_Is_10.5mm_closed_R5_single_refY,GP_Is_10.5mm_closed_R5_single_refY_005.mp4,10,10,10.143904029575765,0.19725602649458018,10,0,0,,False

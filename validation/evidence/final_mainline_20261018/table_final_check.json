@@ -1,0 +1,32 @@
+{
+  "validation": {
+    "passed": true,
+    "groups": 39,
+    "frames": 790,
+    "CSV_Excel_same_values": true,
+    "frozen_predictions_match": true,
+    "video_equal_weight_verified": true
+  },
+  "metrics": {
+    "mainline_id": "DXY-MID",
+    "target_groups": 39,
+    "valid_groups": 39,
+    "input_frames": 790,
+    "valid_frames": 757,
+    "ring_failed_frames": 33,
+    "normal_frames": 627,
+    "Q_recovery_frames": 130,
+    "strict_frames": 616,
+    "median_absolute_relative_error_pct": 4.4113269936186095,
+    "MAE_mm": 0.7092238117097175,
+    "p95_absolute_relative_error_pct": 14.726267315399115,
+    "max_absolute_relative_error_pct": 16.56564027757371,
+    "within_10pct_count": 30,
+    "within_10pct_percent": 76.92307692307693,
+    "n_videos": 79,
+    "n_valid_videos": 77,
+    "threshold10_misclassified": 2,
+    "historical_prediction_fallback": 0,
+    "GT_used_for_algorithm_selection": false
+  }
+}

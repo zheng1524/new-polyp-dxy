@@ -1,0 +1,16 @@
+{
+  "groups": 11,
+  "additional_failure_frames": 1,
+  "no_refitting": true,
+  "all_source_image_mask_hashes_checked": true,
+  "all_Q_original_contour_indices_checked": true,
+  "all_actual_chosen_axes_checked": true,
+  "group_and_frame_values_checked": true,
+  "error_bands": [
+    "0\u20132%",
+    "10\u201315%",
+    "2\u20135%",
+    "5\u201310%",
+    ">15%"
+  ]
+}
