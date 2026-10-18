@@ -27,6 +27,16 @@ def independent_aggregate(frame):
 def compare(actual,expected,output):
     actual=pd.read_csv(actual);expected=pd.read_csv(expected)
     if actual.source_id.duplicated().any() or expected.source_id.duplicated().any():raise ValueError('Duplicate source ID')
+    # A run containing only hard failures has never produced a candidate and
+    # legitimately has no candidate-axis columns. Normalize these *evaluation*
+    # columns to NaN, only when no frame is measurement-eligible. Never invent
+    # axes or suppress missing numerical fields for a successful measurement.
+    for data in (actual,expected):
+        for key in ('axis_x1','axis_y1','axis_x2','axis_y2'):
+            if key not in data:
+                if boolean(data.measurement_eligible).any():
+                    raise ValueError('Eligible measurement missing candidate axis: '+key)
+                data[key]=np.nan
     # Filesystem paths are opaque legacy video labels, not numerical inputs.
     for d in (actual,expected):
         mapping=d[['group','video']].drop_duplicates().copy()

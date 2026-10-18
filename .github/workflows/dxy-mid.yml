@@ -18,3 +18,5 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: dxy-mid measure --manifest examples/mask_demo/frames.csv --output outputs/ci-demo --workers 1
       - run: python scripts/verify_regression.py --actual outputs/ci-demo/frames.csv --expected examples/mask_demo/expected.csv --output outputs/ci-demo/regression.json
+      - name: Reproduce the public real Ring failure (NaN is expected)
+        run: python scripts/reproduce_public.py --case failure --output outputs/ci-public-failure --workers 1

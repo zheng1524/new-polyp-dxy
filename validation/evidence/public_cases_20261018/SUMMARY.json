@@ -1,0 +1,37 @@
+{
+  "original_source_and_frozen_files_unchanged": 61,
+  "original_GT_unchanged": true,
+  "installed_public_command_cwd": "outside checkout (/tmp)",
+  "installed_public_frames": 27,
+  "numeric": 26,
+  "ring_failed": 1,
+  "normal": 24,
+  "Q_recovery": 2,
+  "strict": 24,
+  "full_frozen_groups": 1,
+  "full_group_frames": 20,
+  "full_group_videos": 2,
+  "full_group_prediction_mm": 10.209387177421648,
+  "public_mechanism_groups": 6,
+  "stage_figures": 7,
+  "observed_frame_diagnostics": 6,
+  "frame_truth_checks": 98,
+  "all_truth_checks_pass": true,
+  "ring_parameter_max_delta": 0,
+  "local_tests": {
+    "full_suite": {
+      "total": 20,
+      "passed": 19,
+      "skipped": 1,
+      "seconds": 82.977
+    },
+    "additional_new_failure_CLI": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "full39_refit_this_round": false,
+  "published_source_images_bytes": 3921199,
+  "historical_prediction_fallback": 0,
+  "GT_used_for_selection": false
+}

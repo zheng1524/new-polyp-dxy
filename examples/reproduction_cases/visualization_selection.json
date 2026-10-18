@@ -1,0 +1,32 @@
+{
+  "pipeline_overview": {
+    "source_id": "eff953b7da432d62bc42fff4ec868a9f2f7bbdaf708999af6c726c8859e7e444",
+    "kind": "stages",
+    "title": "IIa扁平主体：真实P/Q与Mid尺度"
+  },
+  "typical_Ip_stages": {
+    "source_id": "d3cdc839fed06f68f27f44d47b5a5b3e1a2deffa04bf235fd46da6c300f54df9",
+    "kind": "stages",
+    "title": "Ip主体：原有候选与真实测量长轴"
+  },
+  "q_recovery": {
+    "source_id": "1fdf425903fe925b39f53d91bbab67e8bf446bb8c06fc83f8f3befd98026cee3",
+    "kind": "stages",
+    "title": "Q冲突恢复：有数值，但不是Normal或Strict"
+  },
+  "zero_P_occlusion": {
+    "source_id": "37a5e8e80a0a6c18111246318fb27d99f09f5210f7941452d81f5fe13c591334",
+    "kind": "stages",
+    "title": "零P：Q约束遮挡推断，不等于可观察边界测量"
+  },
+  "ring_failure": {
+    "source_id": "1549ba54a8f6d99bc5b169fbb73f6c9cc83d57d4dee67eb414191ba09ccc145f",
+    "kind": "failure",
+    "title": "Ring硬失败"
+  },
+  "ring_hole_repair": {
+    "source_id": "3a59563f89fca79dc1f6b9a960843d266abf213e24f25fcec13e21c99c24e67e",
+    "kind": "holes",
+    "title": "Ring小孔修复"
+  }
+}

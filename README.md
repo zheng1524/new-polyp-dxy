@@ -2,7 +2,7 @@
 
 DXY-MID是本仓库唯一推荐的测量Pipeline：**V9.1 Geometry + Mid Scale + 视频等权中位聚合**。它从当前图像及多类分割mask独立计算直径，保留可信边界P、遮挡弱约束Q、质量诊断和真实失败，不读取S5/G3等历史直径补齐结果。
 
-本版本是主线迁移的可审查候选（`1.0.0rc1`）。公开真实mask样例可直接运行；完整790帧、冻结权重及原视频的分发状态详见[发布依赖审查](docs/DISTRIBUTION_REVIEW.md)。这些依赖尚未公开时，不将本分支称为全数据集两级外部可复现的正式Release。
+本版本是主线迁移的可审查候选（`1.0.0rc1`）。仓库现含既有单帧样例及新增**6组27帧真实JPEG与同帧mask**，包括一组两段视频的全部20个冻结选帧，可直接重算完整组级结果。完整790帧、冻结权重及原视频的分发状态详见[发布依赖审查](docs/DISTRIBUTION_REVIEW.md)。本分支不宣称全数据集两级外部可复现。
 
 39组来自硅胶模型回顾性研究，不能解释为临床泛化性能。GT为人工确认的可信尺寸基准，只在独立评价阶段读取，不参与预测生成或算法选择。
 
@@ -39,6 +39,12 @@ D_{\rm group}=\operatorname{median}_{video}(D_{\rm video})
 
 这是同帧标量换算，假设Ring与目标具有近似相同放大率；不同深度、非平面形状及透视可破坏假设。**不使用`median(L) × median(scale)`。** 正式聚合包括正常Gate、Q恢复及其他有限有效数值；严格稳定帧单独作诊断。Ring失败或无几何数值保持NaN，不填补。
 
+下图来自真实数值函数：环候选点、原始轮廓P/Q/X、实际圆/椭圆候选及chosen测量轴均有逐点CSV证据；没有为绘图重新拟合。Mid黄色完整长轴用于尺度，粉色轴用于息肉测量。
+
+![真实IIa帧的六阶段算法过程](docs/visualization/pipeline_overview.png)
+
+[Ip逐阶段图、Q恢复、零P推断与小孔修复](docs/visualization/README.md)另列展示。Q恢复有数值仍不等于Normal或Strict；P=0结果属于遮挡推断。
+
 ## 安装（Ubuntu / Python 3.10）
 
 ```bash
@@ -61,7 +67,32 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/dxy-mid measure \
 
 第一条命令从图像/mask重算Ring、Boundary、Geometry、Scale和Fusion。第二条才读取冻结评价值。示例复用仓库已有公开的真实图像，不能将单帧示例视为完整组级实验。
 
-![真实样例及真正参与测量的长轴](docs/assets/mask_demo.png)
+[既有单帧测量PNG](docs/assets/mask_demo.png)继续保留。
+
+## 新增真实多帧与多视频公开案例
+
+无需权重、GPU或外部下载，安装后可直接运行：
+
+```bash
+# 全部27帧：6组机制子集，含完整Is组及一个真实Ring失败
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/reproduce_public.py \
+  --case all --output outputs/public --workers 2 --render
+
+# 只复现完整两视频组：20帧 → 两段视频中位数 → 10.2093871774 mm
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python scripts/reproduce_public.py \
+  --case multivideo --output outputs/public-videos --workers 2
+
+# 真正的失败：Dxy=NaN，ring_recovery_unreliable；脚本验证失败身份后返回成功
+.venv/bin/python scripts/reproduce_public.py --case failure --output outputs/public-failure --workers 1
+```
+
+每条命令先从JPEG/mask计算，再读取独立expected文件验证。完整Is 10.5 R5组的两段视频各10帧，中位数约10.274870与10.143904mm；组级结果为二者等权中位数。其余5组只有机制示例，**不能用其子集结果声称复现原完整组**。`reproduction_scope.json`明确记录统计范围。
+
+原图、0/1/2 mask、SHA256、时间戳、GT评价信息和命令见[公开案例](examples/reproduction_cases/README.md)。GT只在单独的评价文件中，不进入测量输入。27帧共约3.74 MiB，来自获准公开的实验室自制硅胶模型，不含患者数据。未公开原始视频或分割权重，故这些样例支持Level 1，不能据此宣称Level 2已公开。
+
+本轮[技术报告与验收证据](docs/PUBLIC_CASES_TECHNICAL_REPORT.md)、[简短人工摘要](docs/PUBLIC_CASES_HUMAN_REPORT.md)及[待决定公开资产](docs/PUBLIC_ASSETS_PENDING.json)分别记录复现范围、真实性检查和分发限制。
+
+![真实Ring硬失败，保留NaN](docs/visualization/ring_failure.png)
 
 ## Python API与自有mask
 

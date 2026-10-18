@@ -1,0 +1,10 @@
+{
+  "case": "failure",
+  "published_subset_frames": 1,
+  "published_subset_groups": 1,
+  "numeric_subset_frames": 0,
+  "subset_numeric_groups": 0,
+  "complete_frozen_groups": [],
+  "caution": "Only complete_frozen_groups reproduce full frozen group aggregation; other groups are mechanism subsets.",
+  "passed": true
+}

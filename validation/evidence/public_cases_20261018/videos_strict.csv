@@ -1,0 +1,8 @@
+group,video,n_input_frames,n_valid_frames,median_mm,IQR_mm,strict_frames,unstable_frames,Q_conflict_recovery_frames,reason,strict_only
+GP_IIa_14.0mm_closed_R10_single_refY,GP_IIa_14.0mm_closed_R10_single_refY_004.mp4,1,1,13.369111094578432,0.0,1,0,0,,True
+GP_IIa_9.5mm_closed_R10_single_refY,GP_IIa_9.5mm_closed_R10_single_refY_004.mp4,1,1,9.666296879768664,0.0,1,0,0,,True
+GP_Ip_4.7mm_closed_R5_single_refY,GP_Ip_4.7mm_closed_R5_single_refY_004.mp4,2,1,5.4497227462311155,0.0,1,0,0,,True
+GP_Ip_6.2mm_closed_R5_single_refY,GP_Ip_6.2mm_closed_R5_single_refY_004.mp4,2,0,,,0,0,0,no_valid_same_frame_physical_measurements,True
+GP_Ip_6.4mm_closed_R10_single_refY,GP_Ip_6.4mm_closed_R10_single_refY_005.mp4,1,1,6.389150768007473,0.0,1,0,0,,True
+GP_Is_10.5mm_closed_R5_single_refY,GP_Is_10.5mm_closed_R5_single_refY_004.mp4,10,10,10.27487032526753,0.10791266330461369,10,0,0,,True
+GP_Is_10.5mm_closed_R5_single_refY,GP_Is_10.5mm_closed_R5_single_refY_005.mp4,10,10,10.143904029575765,0.19725602649458018,10,0,0,,True

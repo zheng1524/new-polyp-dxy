@@ -51,6 +51,8 @@ dataset/
 
 ## 当前分发状态
 
-已提交可运行的既有公开真实图像/mask样例。完整790帧、冻结权重与原视频的分发状态见 `DISTRIBUTION_REVIEW.md`；在获得真实公开来源前不提供虚构下载链接。持有原数据者可立即运行本地全39组复算；没有这些资产的人只能完成公开样例，不应被告知已实现整个数据集的两级外部复现。
+已提交既有单帧样例及`examples/reproduction_cases/`中的6组27帧真实JPEG/mask（约3.74 MiB）。其中Is 10.5 R5完整提供两视频全部20个冻结选帧；其余是明确标记的机制子集。可用`scripts/reproduce_public.py`独立重算，详见该目录README。
+
+完整790帧、冻结权重与原视频的分发状态见 `DISTRIBUTION_REVIEW.md`，待决定资产的真实大小与方案见`PUBLIC_ASSETS_PENDING.json`。不提供虚构下载链接。持有原数据者可立即运行本地全39组复算；目前外部可直接完成公开Level 1案例，不能宣称整个数据集的两级外部复现。
 
 GT映射在 `validation/frozen39/GT_mapping.csv`，只供单独评价。人工确认GT为可信基准；Ip2.9两组更正为Ip2.8，Is6.5更正为IIa6.5。原组ID不改，以维护冻结帧关联。没有权威R5/R10实体对应表，不宣称已确认14对独立实体。

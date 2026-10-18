@@ -1,0 +1,6 @@
+test_real_failure_cli_compares_legitimate_missing_axis_columns (test_public_cases.PublicDataIntegrity) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.783s
+
+OK

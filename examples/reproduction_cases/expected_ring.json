@@ -1,0 +1,763 @@
+{
+  "eff953b7da432d62bc42fff4ec868a9f2f7bbdaf708999af6c726c8859e7e444": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 487.8612060546875,
+        "cy": 397.98087310791016,
+        "major_radius": 118.29625701904297,
+        "minor_radius": 67.98143768310547,
+        "angle_deg": 187.05594635009766
+      },
+      "outer": {
+        "cx": 486.6687469482422,
+        "cy": 399.35912322998047,
+        "major_radius": 152.7861785888672,
+        "minor_radius": 95.57410430908203,
+        "angle_deg": 186.22150421142578
+      },
+      "centerline": {
+        "cx": 487.26497650146484,
+        "cy": 398.6699981689453,
+        "major_radius": 135.54121780395508,
+        "minor_radius": 81.77777099609375,
+        "angle_deg": 6.638725280761717
+      }
+    },
+    "frozen_ring_cache_sha256": "6f4cb94ef9a557f46cefb5d71c4ed1eb6f93e232a0fc6423c6b2ad688a2d8f59"
+  },
+  "37a5e8e80a0a6c18111246318fb27d99f09f5210f7941452d81f5fe13c591334": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 633.6516571044922,
+        "cy": 427.7301330566406,
+        "major_radius": 140.0863800048828,
+        "minor_radius": 81.48310089111328,
+        "angle_deg": 195.52310180664062
+      },
+      "outer": {
+        "cx": 634.0569305419922,
+        "cy": 429.12684631347656,
+        "major_radius": 182.13787841796875,
+        "minor_radius": 120.5857925415039,
+        "angle_deg": 194.8048095703125
+      },
+      "centerline": {
+        "cx": 633.8542938232422,
+        "cy": 428.4284896850586,
+        "major_radius": 161.11212921142578,
+        "minor_radius": 101.0344467163086,
+        "angle_deg": 15.163955688476559
+      }
+    },
+    "frozen_ring_cache_sha256": "91b59929c7783d842f27423eb2cc628cf60fec69446f41afd35cb500ddcf66fa"
+  },
+  "1549ba54a8f6d99bc5b169fbb73f6c9cc83d57d4dee67eb414191ba09ccc145f": {
+    "valid": false,
+    "reason": "ring_recovery_unreliable",
+    "branch": "",
+    "ellipses": {},
+    "frozen_ring_cache_sha256": "7eaff5ea92c3aacf4e0235440be132dd825ec8c0ee0a649711d83d3ec05824a3"
+  },
+  "3a59563f89fca79dc1f6b9a960843d266abf213e24f25fcec13e21c99c24e67e": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 576.7068328857422,
+        "cy": 430.8700256347656,
+        "major_radius": 106.5556640625,
+        "minor_radius": 75.21127319335938,
+        "angle_deg": 130.57720184326172
+      },
+      "outer": {
+        "cx": 579.1157836914062,
+        "cy": 432.788818359375,
+        "major_radius": 166.43112182617188,
+        "minor_radius": 129.7777862548828,
+        "angle_deg": 130.76765060424805
+      },
+      "centerline": {
+        "cx": 577.9113082885742,
+        "cy": 431.8294219970703,
+        "major_radius": 136.49339294433594,
+        "minor_radius": 102.4945297241211,
+        "angle_deg": -49.32757377624512
+      }
+    },
+    "frozen_ring_cache_sha256": "9d7e9dac13a95793cd3a811dd39e29900a50f593865ed95b0730d44bbf89f085"
+  },
+  "1fdf425903fe925b39f53d91bbab67e8bf446bb8c06fc83f8f3befd98026cee3": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 614.8665771484375,
+        "cy": 352.81156158447266,
+        "major_radius": 92.87890625,
+        "minor_radius": 42.118133544921875,
+        "angle_deg": 208.1868133544922
+      },
+      "outer": {
+        "cx": 602.1756439208984,
+        "cy": 354.18060302734375,
+        "major_radius": 135.0618896484375,
+        "minor_radius": 72.59745788574219,
+        "angle_deg": 212.75057983398438
+      },
+      "centerline": {
+        "cx": 608.521110534668,
+        "cy": 353.4960823059082,
+        "major_radius": 113.97039794921875,
+        "minor_radius": 57.35779571533203,
+        "angle_deg": 30.46869659423829
+      }
+    },
+    "frozen_ring_cache_sha256": "0d345b773e017623d5c21a0ab7158bd34709082fb98afefabeb09b7ec1cc2023"
+  },
+  "66fb1a627cb4c3a1a3c5e73adf0e96a3190581674e97777b68f24cc15dfdc0c0": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 609.4587707519531,
+        "cy": 354.08641815185547,
+        "major_radius": 91.01741790771484,
+        "minor_radius": 42.95303726196289,
+        "angle_deg": 208.52257537841797
+      },
+      "outer": {
+        "cx": 598.9074096679688,
+        "cy": 356.0400085449219,
+        "major_radius": 135.38327026367188,
+        "minor_radius": 73.17301940917969,
+        "angle_deg": 212.93247985839844
+      },
+      "centerline": {
+        "cx": 604.1830902099609,
+        "cy": 355.0632133483887,
+        "major_radius": 113.20034408569336,
+        "minor_radius": 58.06302833557129,
+        "angle_deg": 30.727527618408207
+      }
+    },
+    "frozen_ring_cache_sha256": "b057ed4d77d50a302eb55715e65e740ff89147a9239ddff8270e7451046a58ee"
+  },
+  "d3cdc839fed06f68f27f44d47b5a5b3e1a2deffa04bf235fd46da6c300f54df9": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 692.2163238525391,
+        "cy": 373.2588653564453,
+        "major_radius": 118.19493865966797,
+        "minor_radius": 74.98118591308594,
+        "angle_deg": 181.45317840576172
+      },
+      "outer": {
+        "cx": 690.7649536132812,
+        "cy": 377.3549499511719,
+        "major_radius": 152.52523803710938,
+        "minor_radius": 104.35858154296875,
+        "angle_deg": 180.33605194091797
+      },
+      "centerline": {
+        "cx": 691.4906387329102,
+        "cy": 375.3069076538086,
+        "major_radius": 135.36008834838867,
+        "minor_radius": 89.66988372802734,
+        "angle_deg": 0.894615173339841
+      }
+    },
+    "frozen_ring_cache_sha256": "6c65c7db925e89f2a73b9dc3f49fc0ac23e94762c4452c6edd62b75ebb51c11d"
+  },
+  "66ddb3368f1e3644ac20d8ef19e16e6631dda49dcde763fe9e55882594d49906": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 424.4986877441406,
+        "cy": 449.04087829589844,
+        "major_radius": 55.52687072753906,
+        "minor_radius": 31.94516372680664,
+        "angle_deg": 178.89904022216797
+      },
+      "outer": {
+        "cx": 423.48974609375,
+        "cy": 449.74251556396484,
+        "major_radius": 87.9613037109375,
+        "minor_radius": 60.12017822265625,
+        "angle_deg": 176.77458953857422
+      },
+      "centerline": {
+        "cx": 423.9942169189453,
+        "cy": 449.39169692993164,
+        "major_radius": 71.74408721923828,
+        "minor_radius": 46.032670974731445,
+        "angle_deg": -2.1631851196289165
+      }
+    },
+    "frozen_ring_cache_sha256": "3b99b8ea2a49d18b9634bdee6e97044fee02d72368e0abec342e5daa71c3a724"
+  },
+  "a57c359ea6f78832009462420b5e4eebc462c7d2dd1573e68862098cfd21893b": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 423.7331848144531,
+        "cy": 463.00304412841797,
+        "major_radius": 55.985897064208984,
+        "minor_radius": 33.56956100463867,
+        "angle_deg": 177.42704010009766
+      },
+      "outer": {
+        "cx": 422.30957794189453,
+        "cy": 463.7164077758789,
+        "major_radius": 88.94834899902344,
+        "minor_radius": 61.33464813232422,
+        "angle_deg": 175.59117889404297
+      },
+      "centerline": {
+        "cx": 423.0213813781738,
+        "cy": 463.35972595214844,
+        "major_radius": 72.46712303161621,
+        "minor_radius": 47.452104568481445,
+        "angle_deg": -3.4908905029296884
+      }
+    },
+    "frozen_ring_cache_sha256": "9bea6cd03132b4ab20d01d8c5ad42b9e3705db39e2e7dad8bd209820ed103e01"
+  },
+  "7ba6efcb2347aaf31ba78abcd31fa1951f6fb7d4d80387846e433e33fcf9cad8": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 722.9517974853516,
+        "cy": 458.29356384277344,
+        "major_radius": 59.85540771484375,
+        "minor_radius": 36.79231262207031,
+        "angle_deg": 184.35811614990234
+      },
+      "outer": {
+        "cx": 723.9001617431641,
+        "cy": 459.03258514404297,
+        "major_radius": 93.53204345703125,
+        "minor_radius": 66.79873657226562,
+        "angle_deg": 182.87842559814453
+      },
+      "centerline": {
+        "cx": 723.4259796142578,
+        "cy": 458.6630744934082,
+        "major_radius": 76.6937255859375,
+        "minor_radius": 51.79552459716797,
+        "angle_deg": 3.6182708740234366
+      }
+    },
+    "frozen_ring_cache_sha256": "00797f24da807f22d55af8b17c26252fe20bdbc7801b86a33c5327bf8ea127ed"
+  },
+  "2a7bf819ca8cad2773cd5b4e98fab432f919b3fe1de55389e1bee467af8266d3": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 770.2703018188477,
+        "cy": 466.4458999633789,
+        "major_radius": 59.77556228637695,
+        "minor_radius": 37.6037483215332,
+        "angle_deg": 186.6989288330078
+      },
+      "outer": {
+        "cx": 771.4284133911133,
+        "cy": 467.8951950073242,
+        "major_radius": 94.08526611328125,
+        "minor_radius": 67.46883392333984,
+        "angle_deg": 184.6635284423828
+      },
+      "centerline": {
+        "cx": 770.8493576049805,
+        "cy": 467.17054748535156,
+        "major_radius": 76.9304141998291,
+        "minor_radius": 52.53629112243652,
+        "angle_deg": 5.681228637695301
+      }
+    },
+    "frozen_ring_cache_sha256": "bf7fc27db048d8ffb5983ca2d42f086cc3fa51f85190ec4cd77c4e0f7bf268aa"
+  },
+  "981074468a6e22b7cc62713146a0d19f0b764229a7326a9c540feb839a603308": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 917.1829986572266,
+        "cy": 478.5245666503906,
+        "major_radius": 61.41070556640625,
+        "minor_radius": 38.14814758300781,
+        "angle_deg": 189.44054412841797
+      },
+      "outer": {
+        "cx": 919.3280792236328,
+        "cy": 479.37660217285156,
+        "major_radius": 97.16249084472656,
+        "minor_radius": 68.65950775146484,
+        "angle_deg": 187.9512481689453
+      },
+      "centerline": {
+        "cx": 918.2555389404297,
+        "cy": 478.9505844116211,
+        "major_radius": 79.2865982055664,
+        "minor_radius": 53.40382766723633,
+        "angle_deg": 8.695896148681637
+      }
+    },
+    "frozen_ring_cache_sha256": "4a3353af138ab7b4f0b4a1bb77f34115753c4cf769921c02718a71ba971df255"
+  },
+  "3b3b1c81a3ad7a2738be5fc5170806ae1d538a6a5962bcd1446c0c3050dfdd39": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 864.2885055541992,
+        "cy": 446.52799224853516,
+        "major_radius": 59.32638168334961,
+        "minor_radius": 36.37812042236328,
+        "angle_deg": 185.12135314941406
+      },
+      "outer": {
+        "cx": 865.5844421386719,
+        "cy": 447.33548736572266,
+        "major_radius": 94.04502868652344,
+        "minor_radius": 66.65867614746094,
+        "angle_deg": 183.8182601928711
+      },
+      "centerline": {
+        "cx": 864.9364738464355,
+        "cy": 446.9317398071289,
+        "major_radius": 76.68570518493652,
+        "minor_radius": 51.51839828491211,
+        "angle_deg": 4.469806671142575
+      }
+    },
+    "frozen_ring_cache_sha256": "d0fd80eb324a0da30b923b46b09a3c7bdd0449e4473a321969f6116c4d57d1d1"
+  },
+  "d54ea6b4bb2e484ea6421c23cf3effaafb32c40553bb911ea5d9120f344badc6": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 478.12537384033203,
+        "cy": 395.5557556152344,
+        "major_radius": 56.006980895996094,
+        "minor_radius": 33.28865432739258,
+        "angle_deg": 165.28780364990234
+      },
+      "outer": {
+        "cx": 475.67105865478516,
+        "cy": 395.7609405517578,
+        "major_radius": 91.78729248046875,
+        "minor_radius": 62.67931365966797,
+        "angle_deg": 164.30229949951172
+      },
+      "centerline": {
+        "cx": 476.8982162475586,
+        "cy": 395.6583480834961,
+        "major_radius": 73.89713668823242,
+        "minor_radius": 47.98398399353027,
+        "angle_deg": -15.204948425292974
+      }
+    },
+    "frozen_ring_cache_sha256": "b927ef7f7b7803afda1e441650aed5f53465f96cb7b25153d902aea190f2eac1"
+  },
+  "c74a477d766ed69ff0fc5cecb14e3ebd9eb36a27f90c17716e402ba13444267f": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 470.94617462158203,
+        "cy": 400.2170867919922,
+        "major_radius": 57.26908493041992,
+        "minor_radius": 33.342498779296875,
+        "angle_deg": 164.0193328857422
+      },
+      "outer": {
+        "cx": 468.36910247802734,
+        "cy": 400.301025390625,
+        "major_radius": 92.2186050415039,
+        "minor_radius": 62.92129898071289,
+        "angle_deg": 163.47472381591797
+      },
+      "centerline": {
+        "cx": 469.6576385498047,
+        "cy": 400.2590560913086,
+        "major_radius": 74.74384498596191,
+        "minor_radius": 48.13189888000488,
+        "angle_deg": -16.25297164916992
+      }
+    },
+    "frozen_ring_cache_sha256": "eb736018f2904441172a1863a78e1d00937b58ec7e114701bf3ce16e273963f2"
+  },
+  "498cd458ced54ccdaeca703ef3159901a9cbb0a20ad22c0e020aa556597fcf17": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 434.46900177001953,
+        "cy": 442.11907958984375,
+        "major_radius": 59.302242279052734,
+        "minor_radius": 36.12821960449219,
+        "angle_deg": 161.91883087158203
+      },
+      "outer": {
+        "cx": 432.49341583251953,
+        "cy": 442.6274871826172,
+        "major_radius": 95.94609832763672,
+        "minor_radius": 66.3343505859375,
+        "angle_deg": 161.10987854003906
+      },
+      "centerline": {
+        "cx": 433.48120880126953,
+        "cy": 442.37328338623047,
+        "major_radius": 77.62417030334473,
+        "minor_radius": 51.231285095214844,
+        "angle_deg": -18.485645294189457
+      }
+    },
+    "frozen_ring_cache_sha256": "919b343b5dbc35ed974938d58fdc54aaf5b8d578482cfba92f92d3664b9701fa"
+  },
+  "a418ebf3e50877cfec030fab64fb56a7cfcb2f80d67ada97e837244ca5bcf720": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 497.9898910522461,
+        "cy": 405.5008316040039,
+        "major_radius": 59.923831939697266,
+        "minor_radius": 35.997352600097656,
+        "angle_deg": 164.59567260742188
+      },
+      "outer": {
+        "cx": 496.2277145385742,
+        "cy": 405.62967681884766,
+        "major_radius": 95.23955535888672,
+        "minor_radius": 66.49516296386719,
+        "angle_deg": 163.47286224365234
+      },
+      "centerline": {
+        "cx": 497.10880279541016,
+        "cy": 405.5652542114258,
+        "major_radius": 77.58169364929199,
+        "minor_radius": 51.24625778198242,
+        "angle_deg": -15.965732574462896
+      }
+    },
+    "frozen_ring_cache_sha256": "1d3cabc22ec60527784b87bd26d8e56c7f4c5a8b03e48374173dad698a6fd3b5"
+  },
+  "efaf192cbbd5d008f3f89e2d0803795ba97bd8b17d41b5b5130370a0f21a9983": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 482.33219146728516,
+        "cy": 401.45782470703125,
+        "major_radius": 60.82582473754883,
+        "minor_radius": 46.62200164794922,
+        "angle_deg": 166.78672790527344
+      },
+      "outer": {
+        "cx": 481.1069869995117,
+        "cy": 401.5155792236328,
+        "major_radius": 96.32814025878906,
+        "minor_radius": 78.00650024414062,
+        "angle_deg": 165.73424530029297
+      },
+      "centerline": {
+        "cx": 481.71958923339844,
+        "cy": 401.48670196533203,
+        "major_radius": 78.57698249816895,
+        "minor_radius": 62.31425094604492,
+        "angle_deg": -13.739513397216804
+      }
+    },
+    "frozen_ring_cache_sha256": "631951653b760f2e1b457c8f1ce32a5cb950ff9455895358e3bdc9834c0840f5"
+  },
+  "aa377a63c4017ef624e0886e11e0df7a32bac3563b42e9283008479783e53448": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 496.4071502685547,
+        "cy": 382.52098846435547,
+        "major_radius": 61.115966796875,
+        "minor_radius": 46.86001205444336,
+        "angle_deg": 167.50123596191406
+      },
+      "outer": {
+        "cx": 494.88941192626953,
+        "cy": 382.5141067504883,
+        "major_radius": 97.27519226074219,
+        "minor_radius": 77.88550567626953,
+        "angle_deg": 166.29497528076172
+      },
+      "centerline": {
+        "cx": 495.6482810974121,
+        "cy": 382.5175476074219,
+        "major_radius": 79.1955795288086,
+        "minor_radius": 62.372758865356445,
+        "angle_deg": -13.10189437866211
+      }
+    },
+    "frozen_ring_cache_sha256": "ff3a8680b909af002fa421d31a04881e760c5a95fa2d370082ac025f9763f344"
+  },
+  "17d54562a0b4f3c6068d443088c7d2dd10099354038610e393471cd8b19e0df6": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 326.67850494384766,
+        "cy": 227.2665557861328,
+        "major_radius": 62.88637924194336,
+        "minor_radius": 42.696170806884766,
+        "angle_deg": 160.79959869384766
+      },
+      "outer": {
+        "cx": 323.4995574951172,
+        "cy": 226.41551208496094,
+        "major_radius": 101.70543670654297,
+        "minor_radius": 77.19119262695312,
+        "angle_deg": 160.87628936767578
+      },
+      "centerline": {
+        "cx": 325.0890312194824,
+        "cy": 226.84103393554688,
+        "major_radius": 82.29590797424316,
+        "minor_radius": 59.943681716918945,
+        "angle_deg": -19.162055969238285
+      }
+    },
+    "frozen_ring_cache_sha256": "5a1d9fa2cb471e30db2a1db1ae00ee1d658a9c37de300905dbabce7a643b89ea"
+  },
+  "2ae04e9530f222275e4db933ffb1db3ae74284746344e479db921616e2b886dd": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 319.97728729248047,
+        "cy": 230.19610595703125,
+        "major_radius": 62.702735900878906,
+        "minor_radius": 43.03048324584961,
+        "angle_deg": 159.6886978149414
+      },
+      "outer": {
+        "cx": 317.3004837036133,
+        "cy": 229.63124084472656,
+        "major_radius": 101.5979232788086,
+        "minor_radius": 77.50543212890625,
+        "angle_deg": 160.17119598388672
+      },
+      "centerline": {
+        "cx": 318.6388854980469,
+        "cy": 229.9136734008789,
+        "major_radius": 82.15032958984375,
+        "minor_radius": 60.26795768737793,
+        "angle_deg": -20.07005310058593
+      }
+    },
+    "frozen_ring_cache_sha256": "49bc1f35414f004bda597fdf374c12b0c6907d6b2d2b5ab45a52e5a7ba99c227"
+  },
+  "c2bc640b27e63466d325e32c35aa8f273725d537c9e78a641077f88b7bf6989c": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 284.65655517578125,
+        "cy": 303.6634063720703,
+        "major_radius": 67.51534271240234,
+        "minor_radius": 48.129188537597656,
+        "angle_deg": 155.95457458496094
+      },
+      "outer": {
+        "cx": 281.7156677246094,
+        "cy": 303.1517105102539,
+        "major_radius": 107.29544067382812,
+        "minor_radius": 83.197021484375,
+        "angle_deg": 156.36434936523438
+      },
+      "centerline": {
+        "cx": 283.1861114501953,
+        "cy": 303.4075584411621,
+        "major_radius": 87.40539169311523,
+        "minor_radius": 65.66310501098633,
+        "angle_deg": -23.840538024902347
+      }
+    },
+    "frozen_ring_cache_sha256": "362bb1e11d69afd8e4b8451ebb40532c40757fe218c28babc8fafcda8075d178"
+  },
+  "2349d9f593476ef00e977a127bbea2d8e8f6e41d9e87c25f56a34fd383a1cb17": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 284.3864059448242,
+        "cy": 304.0446548461914,
+        "major_radius": 68.21994018554688,
+        "minor_radius": 49.11933517456055,
+        "angle_deg": 155.65287017822266
+      },
+      "outer": {
+        "cx": 281.4884262084961,
+        "cy": 303.6489715576172,
+        "major_radius": 108.720703125,
+        "minor_radius": 84.1477279663086,
+        "angle_deg": 156.84078216552734
+      },
+      "centerline": {
+        "cx": 282.93741607666016,
+        "cy": 303.8468132019043,
+        "major_radius": 88.47032165527344,
+        "minor_radius": 66.63353157043457,
+        "angle_deg": -23.75317382812501
+      }
+    },
+    "frozen_ring_cache_sha256": "2aafc3bf69cbabdc06417369033c649fb753dd454e2bfe7cae75a9dc5a31c4fb"
+  },
+  "8fe027cf651fecfbd6c63e1cca73e05efc068a1391e33d2d59a5f0fe3581cd58": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 309.0695343017578,
+        "cy": 395.8385696411133,
+        "major_radius": 75.73013305664062,
+        "minor_radius": 59.49488830566406,
+        "angle_deg": 149.53820419311523
+      },
+      "outer": {
+        "cx": 306.3640899658203,
+        "cy": 395.75714111328125,
+        "major_radius": 119.85812377929688,
+        "minor_radius": 98.24066162109375,
+        "angle_deg": 150.41699981689453
+      },
+      "centerline": {
+        "cx": 307.71681213378906,
+        "cy": 395.79785537719727,
+        "major_radius": 97.79412841796875,
+        "minor_radius": 78.8677749633789,
+        "angle_deg": -30.022397994995117
+      }
+    },
+    "frozen_ring_cache_sha256": "f90df55b82eee9c1f6566a36903423972a4acde2f66e37aa6a2191f11abb1241"
+  },
+  "1b0e9a5905ac807c035f6384fd78e1ef0b6197e73028613b03fbee28b013b470": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 448.04685974121094,
+        "cy": 429.0852737426758,
+        "major_radius": 76.95957946777344,
+        "minor_radius": 67.02513885498047,
+        "angle_deg": 154.12705993652344
+      },
+      "outer": {
+        "cx": 446.01820373535156,
+        "cy": 429.4751968383789,
+        "major_radius": 120.68931579589844,
+        "minor_radius": 106.80917358398438,
+        "angle_deg": 151.6576385498047
+      },
+      "centerline": {
+        "cx": 447.03253173828125,
+        "cy": 429.28023529052734,
+        "major_radius": 98.82444763183594,
+        "minor_radius": 86.91715621948242,
+        "angle_deg": -27.107650756835948
+      }
+    },
+    "frozen_ring_cache_sha256": "fe1c6010fffdde23152f226bb7befca5969d093bf16bb7e16cf8096a471e9c75"
+  },
+  "76d5e049e9a43c1928d1dbba5ef20f8321acd0d427a1ccb1b080d1ca21d5723c": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 429.0916442871094,
+        "cy": 387.0039825439453,
+        "major_radius": 83.62529754638672,
+        "minor_radius": 74.59416961669922,
+        "angle_deg": 157.32797241210938
+      },
+      "outer": {
+        "cx": 427.07969665527344,
+        "cy": 385.7940673828125,
+        "major_radius": 130.44314575195312,
+        "minor_radius": 119.43069458007812,
+        "angle_deg": 152.6709861755371
+      },
+      "centerline": {
+        "cx": 428.0856704711914,
+        "cy": 386.3990249633789,
+        "major_radius": 107.03422164916992,
+        "minor_radius": 97.01243209838867,
+        "angle_deg": -25.000520706176765
+      }
+    },
+    "frozen_ring_cache_sha256": "81dc8aea8f783f53576da64d18c05314daf96ec72072873ba034b3085cbd9adf"
+  },
+  "f56cec3fd306f3f1cee615cf9316bbf0d3ae21cd3930d95891206c8f289d3776": {
+    "valid": true,
+    "reason": "ok",
+    "branch": "visible_inner_arc_RANSAC",
+    "ellipses": {
+      "inner": {
+        "cx": 472.12249755859375,
+        "cy": 424.2855224609375,
+        "major_radius": 84.16805267333984,
+        "minor_radius": 78.25631713867188,
+        "angle_deg": 157.56690216064453
+      },
+      "outer": {
+        "cx": 470.6349639892578,
+        "cy": 424.2137145996094,
+        "major_radius": 131.00270080566406,
+        "minor_radius": 122.75003051757812,
+        "angle_deg": 150.1716079711914
+      },
+      "centerline": {
+        "cx": 471.3787307739258,
+        "cy": 424.24961853027344,
+        "major_radius": 107.58537673950195,
+        "minor_radius": 100.503173828125,
+        "angle_deg": -26.13074493408203
+      }
+    },
+    "frozen_ring_cache_sha256": "ec3d4d4abbb2d5fa0581077458211af63d3385139f85215d97b728c957277a4d"
+  }
+}

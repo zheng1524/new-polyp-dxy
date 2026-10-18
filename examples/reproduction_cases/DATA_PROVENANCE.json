@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "authorization": "Maintainer explicitly authorized incremental public release of reviewed laboratory-made silicone-phantom JPEG/class-mask examples in this task.",
+  "domain": "laboratory-made silicone polyp phantom; not patient data",
+  "frames": 27,
+  "groups": 6,
+  "complete_groups": 1,
+  "complete_group": "GP_Is_10.5mm_closed_R5_single_refY",
+  "raw_files": 54,
+  "raw_bytes": 3921199,
+  "resolution": [
+    1280,
+    720
+  ],
+  "image_source": "Frozen C_joint selected JPEGs, byte-identical to validation/frozen39/inputs.csv",
+  "mask_source": "Frozen aligned INIT segmentation cache; uint8 class IDs 0/1/2; unchanged",
+  "safety_review": "All 27 images visually inspected in contact sheet; silicone simulator scene only; no patient names, overlays or identifiable people; JPEG EXIF empty for all images.",
+  "permission_scope": "Only this listed small subset; not permission for full videos, 790-frame bundle, weights or training data.",
+  "GT": "Existing maintainer-confirmed mapping, unchanged; evaluation-only separate CSV",
+  "selection_basis": "Algorithm mechanisms and chronological first eligible frame; no GT/error criterion",
+  "full_manifest_sha256": "37805da25dcb9c19b6eaec95daef232fbd7abe4fda9d99f8f4ec2e34d70e47ed",
+  "numerical_expected_source_sha256": "31abfe21d4e2e0fca2e6c76884ea40796531df1c80b99cfe0a71798df844547f"
+}
