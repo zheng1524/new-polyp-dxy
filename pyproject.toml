@@ -24,6 +24,7 @@ dxy-mid = "dxy_mid.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["dxy_mid", "dxy_mid.*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

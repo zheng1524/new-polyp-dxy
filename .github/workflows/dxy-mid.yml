@@ -14,7 +14,8 @@ jobs:
           python-version: '3.10'
           cache: pip
       - run: pip install '.[plot,test,report]'
-      - run: python -c 'import dxy_mid; print(dxy_mid.__version__)'
+      - name: Verify only the formal measurement package is installed
+        run: python -c 'import dxy_mid, importlib.util; assert all(importlib.util.find_spec(n) is None for n in ["dxy_s5cpag", "dxy_dg3"]); print(dxy_mid.__version__)'
       - run: python -m unittest discover -s tests -v
       - name: Verify official 39-group CSV and Excel tables
         run: python mainline/scripts/build_mainline.py --check

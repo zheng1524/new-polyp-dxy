@@ -24,7 +24,7 @@ frames, groups, videos = run_manifest('frames.csv', 'outputs/run', workers=4)
 |Scale|`_engine.scale(frame,ring,'mid_major')`|同帧Ring → ScaleResult|原图完整长轴px；mm/px|
 |Fusion|`_engine.fusion`|本次单帧毫米值 → 视频中位/组中位|mm，不接受旧方法补值|
 
-`_engine`为经过溯源的内部实现，不承诺历史模块名为稳定公共API；对外推荐上面的`dxy_mid`和`dxy_mid.batch`。迁移保留函数边界与数据契约，未新建另一套几何算法。数值函数按原实际定义模块整理，消除星号导入、运行时读取实验源码及实验目录IO。函数级来源见 `SOURCE_PROVENANCE.csv`。
+`_engine`是正式算法内部实现，保留冻结函数和数据契约。公共接口为`dxy_mid`和`dxy_mid.batch`；当前源码及SHA256见[SOURCE_PROVENANCE.csv](SOURCE_PROVENANCE.csv)。
 
 原拟合器用临时模块级hook保留冻结质量/优化行为。单进程API通过可重入锁保护，批处理使用进程隔离；不要在同一解释器手工修改内部hook。缓存只由本次路线产生，包含当前图像/mask、参数及源码指纹；读取自身缓存前验证键。不要从不可信来源放入pickle缓存。
 

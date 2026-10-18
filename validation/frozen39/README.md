@@ -8,6 +8,6 @@
 
 重算入口：`python scripts/reproduce39.py --data-root <解包后的图像/mask目录> --output outputs/regression39 --workers 4`。
 
-当前提交中的回归实际结论及安装证据由 `docs/RELEASE_TECHNICAL_REPORT.md` 记录。完整数据、权重尚未公开时，不应将缺少输入的全量测试标为PASS；CI只可运行真实公开样例。
+当前提交中的回归实际结论及安装证据由 [当前验证说明](../../docs/VALIDATION.md) 记录。完整数据、权重尚未公开时，不应将缺少输入的全量测试标为PASS；CI只可运行真实公开样例。
 
 视频键由原绝对路径一对一投影为文件名，聚合分组关系不变；source_id、stem和随机种子未改。检测到重名视频会拒绝，不凭重复文件名错配输入。

@@ -57,12 +57,6 @@
   "GT": "validation/frozen39/GT_mapping.csv",
   "input_manifest": "validation/frozen39/inputs.csv",
   "results": "validation/results",
-  "retired_methods": [
-    "S5",
-    "G3",
-    "DG3"
-  ],
-  "historical_archive": "legacy/S5_mainline_20261018",
   "distribution_limits": "Only reviewed public examples are bundled; full39 raw inputs, full videos and model weights remain restricted",
   "artifacts_sha256": {
     "mainline/tables/group_results.csv": "9af10ba20a7435242265cf845c657197bec1163ea4ba5c914d9cc6f3ac1aead9",

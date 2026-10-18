@@ -6,5 +6,3 @@ V9.1 Geometry + 原图Mid Scale + 逐帧毫米→视频中位→组级视频等�
 - [39组CSV](tables/group_results.csv) / [39组Excel](tables/group_results.xlsx)
 - [逐视频结果](tables/video_results.csv) / [逐帧结果](../validation/results/frame_measurements.csv)
 - 测量入口：`dxy-mid measure`；表格校验：`python mainline/scripts/build_mainline.py --check`。
-
-历史S5完整旧入口已原样归档到[legacy](../legacy/S5_mainline_20261018/)。它不再是默认主线，也不参与失败补齐。
