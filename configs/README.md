@@ -1,5 +1,3 @@
-# 配置入口
+# 正式配置
 
-当前正式候选只使用 `dxy_mid.json`，对应冻结V9.1 Geometry、原图Mid尺度和1.2mm线材。批量运行参数由CLI传入，不修改拟合阈值。
-
-`runtime.example.env`与旧`data_layout.md`保留给历史S5归档，不用于DXY-MID。当前模型/数据/视频索引说明在 `docs/DATA_MODEL.md`。
+`dxy_mid.json`核验冻结V9.1 Geometry、Mid尺度及1.2mm线材设置。输入和运行参数由CLI传入。参见[数据契约](../docs/DATA_MODEL.md)。

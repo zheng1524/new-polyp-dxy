@@ -15,13 +15,15 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 class OfficialMainline(unittest.TestCase):
-    def test_machine_pointer_and_archive(self):
+    def test_machine_pointer_and_single_package(self):
         m=json.loads((ROOT/'mainline/MAINLINE_MANIFEST.json').read_text())
         self.assertEqual(m['mainline_id'],'DXY-MID');self.assertEqual(m['status'],'OFFICIAL_MAINLINE')
         self.assertFalse(m['historical_prediction_fallback'])
         self.assertIn('DXY-MID',(ROOT/'mainline/CURRENT_POINTER.md').read_text())
-        old=json.loads((ROOT/'legacy/S5_mainline_20261018/MAINLINE_MANIFEST.json').read_text())
-        self.assertEqual(old['mainline_id'],'S5-CPAG-39')
+        for retired in ['base38','ip88_extension','dg3','legacy','src/dxy_s5cpag','src/dxy_dg3']:
+            self.assertFalse((ROOT/retired).exists(),retired)
+        for package in ['dxy_s5cpag','dxy_dg3','polypseg']:
+            self.assertIsNone(importlib.util.find_spec(package),package)
         for path,expected in m['artifacts_sha256'].items():
             self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),expected,path)
 

@@ -7,5 +7,3 @@
 ![39组误差排序](figures/group_abs_error_descending.png)
 
 [完整Excel下载](tables/group_results.xlsx?raw=true) · [逐组CSV](tables/group_results.csv) · [指标CSV](tables/metrics_summary.csv)
-
-这39组为硅胶模型回顾性数据，非临床泛化性能。历史S5指标已移入legacy/S5_mainline_20261018，不是当前主线。

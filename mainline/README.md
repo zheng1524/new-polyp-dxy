@@ -10,5 +10,3 @@ python mainline/scripts/build_mainline.py --check
 ```
 
 不加`--check`可从仓库随附DXY-MID冻结数值表重建CSV/Excel；这是科研结果导出，不是从图像重新测量。独立图像测量使用根README中的`dxy-mid`命令；全39组独立复算另需未公开的原图/mask输入。
-
-S5/G3/DG3仅供历史追溯。旧S5完整mainline目录保存在[归档](../legacy/S5_mainline_20261018/)，默认导出脚本不再读取其数值或执行其聚合。
