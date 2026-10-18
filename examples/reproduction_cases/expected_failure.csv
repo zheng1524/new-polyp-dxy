@@ -1,0 +1,2 @@
+source_id,group,video,stem,L_px,scale_mm_per_px,L_mid_px,D_mm,ring_valid,ring_reason,quality_class,default_Gate_pass,Q_distance_recovery,stability_review_pass,reason,stability_flags,P_count,Q_count,selected_body,selected_shape,axis_x1,axis_y1,axis_x2,axis_y2,measurement_eligible
+1549ba54a8f6d99bc5b169fbb73f6c9cc83d57d4dee67eb414191ba09ccc145f,GP_Ip_4.7mm_closed_R5_single_refY,GP_Ip_4.7mm_closed_R5_single_refY_004.mp4,GP_Ip_4.7mm_closed_R5_single_refY_004-raw01-16,,,,,False,ring_recovery_unreliable,ring_failure,False,False,False,ring_failure,ring_failure,0,0,,,,,,,False

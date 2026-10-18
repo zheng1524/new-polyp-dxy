@@ -3,10 +3,27 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dxy-s5-cpag39"
-version = "0.1.0"
-description = "Portable source closure for the frozen S5-CPAG-39 Dxy measurement mainline"
-requires-python = ">=3.10"
+name = "dxy-mid"
+version = "1.0.0rc1"
+description = "DXY-MID: frozen V9.1 polyp geometry, native Mid ring scale and equal-video robust fusion"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy==1.26.4", "pandas==2.2.3", "opencv-python==4.10.0.84",
+  "scipy==1.15.3", "scikit-image==0.25.2", "Pillow==10.4.0"
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib==3.9.2"]
+video = ["torch==2.5.1", "torchvision==0.20.1", "transformers==4.46.3", "safetensors==0.4.5"]
+test = ["pytest==8.3.5"]
+report = ["openpyxl==3.1.5"]
+
+[project.scripts]
+dxy-mid = "dxy_mid.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

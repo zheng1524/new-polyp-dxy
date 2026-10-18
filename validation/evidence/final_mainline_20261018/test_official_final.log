@@ -1,0 +1,9 @@
+test_complete_CSV_Excel_and_frozen_arithmetic (test_official_mainline.OfficialMainline) ... ok
+test_current_README_links (test_official_mainline.OfficialMainline) ... ok
+test_gallery_points_axes_values_and_failure_are_real (test_official_mainline.OfficialMainline) ... ok
+test_machine_pointer_and_archive (test_official_mainline.OfficialMainline) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.509s
+
+OK

@@ -1,0 +1,42 @@
+{
+  "video": "GP_IIa_22.0mm_closed_R5_single_refY_005.mp4",
+  "candidate_frames": 120,
+  "selected_new": 10,
+  "selected_frozen": 10,
+  "frame_indices_identical": true,
+  "image_hashes_identical": true,
+  "mask_hashes_identical": true,
+  "GT_used": false,
+  "historical_prediction_fallback": 0,
+  "full_pipeline_completed": true,
+  "measurements": {
+    "version": "DXY-MID-1.0.0rc1",
+    "manifest_sha256": "7cda958f0db03e4bf1e7c3b6b7d6da195706850dcb25084096127758a80a449d",
+    "source_fingerprint": "0fedf0552b8adff6c45a0b74d4ca7ca0ce431d3a0a1934e4fe758461fddaac83",
+    "frames": 10,
+    "groups": 1,
+    "eligible": 10,
+    "ring_failures": 0,
+    "normal_Gate": 10,
+    "Q_recovery": 0,
+    "strict": 9,
+    "history_prediction_fallback": 0,
+    "GT_read": false,
+    "workers": 1,
+    "input_columns": [
+      "source_id",
+      "group",
+      "video",
+      "stem",
+      "image_path",
+      "mask_path",
+      "ring_mm",
+      "image_sha256",
+      "mask_sha256",
+      "frame_index",
+      "timestamp_sec",
+      "cohort"
+    ]
+  },
+  "CPU_handoff": "fresh interpreter, no CUDA state inherited"
+}

@@ -1,0 +1,2 @@
+group,n_input_videos,n_valid_videos,prediction_mm,valid,video_equal_weight,strict_only,reason,history_prediction_fallback
+GP_Is_10.5mm_closed_R5_single_refY,2,2,10.209387177421647,True,True,False,,0

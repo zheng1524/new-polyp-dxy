@@ -1,0 +1,7 @@
+group,n_input_videos,n_valid_videos,prediction_mm,valid,video_equal_weight,strict_only,reason,history_prediction_fallback
+GP_IIa_14.0mm_closed_R10_single_refY,1,1,13.369111094578432,True,True,True,,0
+GP_IIa_9.5mm_closed_R10_single_refY,1,1,9.666296879768664,True,True,True,,0
+GP_Ip_4.7mm_closed_R5_single_refY,1,1,5.4497227462311155,True,True,True,,0
+GP_Ip_6.2mm_closed_R5_single_refY,1,0,,False,True,True,scale_not_attached_or_no_eligible_frame,0
+GP_Ip_6.4mm_closed_R10_single_refY,1,1,6.389150768007473,True,True,True,,0
+GP_Is_10.5mm_closed_R5_single_refY,2,2,10.209387177421647,True,True,True,,0

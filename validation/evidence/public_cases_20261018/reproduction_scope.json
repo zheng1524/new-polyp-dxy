@@ -1,0 +1,12 @@
+{
+  "case": "all",
+  "published_subset_frames": 27,
+  "published_subset_groups": 6,
+  "numeric_subset_frames": 26,
+  "subset_numeric_groups": 6,
+  "complete_frozen_groups": [
+    "GP_Is_10.5mm_closed_R5_single_refY"
+  ],
+  "caution": "Only complete_frozen_groups reproduce full frozen group aggregation; other groups are mechanism subsets.",
+  "passed": true
+}

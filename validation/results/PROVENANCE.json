@@ -1,0 +1,13 @@
+{
+  "source": "Independent installed DXY-MID full39 regression retained from initial migration; same frozen V9.1 + Mid results",
+  "baseline_commit": "2e61a6400d34653ee8f536aba68c05f66381f2f2",
+  "source_hashes": {
+    "frames.csv": "b5f76741c5e8a05e76b90c3509ffe2d434de7abdaa80356692270f3b612ac72a",
+    "groups.csv": "baac9cfaf882fbe7708cc4a78cf3c9164138fb41b30dff52e3cfc45b14f10988",
+    "videos.csv": "adcf495b56fbd8855476f4fa117b38bdd37a8b74b44d74d69ae092ac334f5bba",
+    "run.json": "e606e1c3f9a79ce82e633db947af502c6fcfa6a080b6ec5ce0ec7396622e1525"
+  },
+  "frame_export": "Column projection only: remove local image/mask/cache filesystem paths; numerical values and quality flags unchanged",
+  "history_prediction_fallback": 0,
+  "GT_selection": false
+}

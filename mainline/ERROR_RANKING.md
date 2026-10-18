@@ -1,10 +1,11 @@
-# S5-CPAG-39 组误差排序
+# DXY-MID正式39组误差排序
 
-coverage **39/39**；median **4.577%**；MAE **0.613 mm**；p95 **19.263%**；max **23.685%**。
+39/39组有效，757/790帧有效；中位绝对相对误差4.411327%，MAE 0.709224mm；p95相对误差14.726267%，最大16.565640%。10%以内30/39组。
 
-图中从上到下为绝对相对误差从高到低。青色 R5，橙色 R10；紫色星号为 Ip8 R10 的原视频中心线内环适配，其余 38 组均来自原冻结 S5-CPAG 主线。
+有符号误差为prediction−GT，负值低估、正值高估。按完整39组计算，图集所选11组不用于重算总体指标。
 
-![误差排序](figures/group_abs_error_descending.png)
+![39组误差排序](figures/group_abs_error_descending.png)
 
-- 完整排序 CSV：`tables/group_errors_descending.csv`
-- 机器可读定义：`MAINLINE_MANIFEST.json`
+[完整Excel下载](tables/group_results.xlsx?raw=true) · [逐组CSV](tables/group_results.csv) · [指标CSV](tables/metrics_summary.csv)
+
+这39组为硅胶模型回顾性数据，非临床泛化性能。历史S5指标已移入legacy/S5_mainline_20261018，不是当前主线。

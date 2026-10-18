@@ -1,3 +1,5 @@
+> **历史归档**：此文描述S5/DG3旧版本；当前DXY-MID正式入口见仓库根README。
+
 # S5-CPAG-39 source-closure audit
 
 Date: 2026-10-06

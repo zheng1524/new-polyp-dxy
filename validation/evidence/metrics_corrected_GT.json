@@ -1,0 +1,13 @@
+{
+  "scope": "39 silicone-model retrospective groups; exploratory, not clinical generalization",
+  "target_groups": 39,
+  "numeric_groups": 39,
+  "failed_groups": [],
+  "historical_prediction_fallback": 0,
+  "GT_used_to_select_algorithm": false,
+  "median_absolute_relative_error_pct": 4.4113269936186095,
+  "MAE_mm": 0.7092238117097176,
+  "p95_absolute_relative_error_pct": 14.726267315399115,
+  "max_absolute_relative_error_pct": 16.56564027757371,
+  "within10pct": 30
+}

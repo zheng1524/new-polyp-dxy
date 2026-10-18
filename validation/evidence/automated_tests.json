@@ -1,0 +1,9 @@
+{
+  "total": 14,
+  "passed": 13,
+  "skipped": 1,
+  "failed": 0,
+  "skipped_reason": "private full39 dataset is optional in lightweight suite; full clean recomputation passed independently",
+  "real_public_example": true,
+  "no_ring_failure_label_assertion": true
+}

@@ -1,0 +1,29 @@
+{
+  "version": "DXY-MID-1.0.0rc1",
+  "manifest_sha256": "37805da25dcb9c19b6eaec95daef232fbd7abe4fda9d99f8f4ec2e34d70e47ed",
+  "source_fingerprint": "a0297fd1028025075c1867e377c519e7207ea0d4296b62657bba21d95ca3bf3d",
+  "frames": 790,
+  "groups": 39,
+  "eligible": 757,
+  "ring_failures": 33,
+  "normal_Gate": 627,
+  "Q_recovery": 130,
+  "strict": 616,
+  "history_prediction_fallback": 0,
+  "GT_read": false,
+  "workers": 8,
+  "input_columns": [
+    "source_id",
+    "group",
+    "video",
+    "stem",
+    "image_path",
+    "mask_path",
+    "ring_mm",
+    "image_sha256",
+    "mask_sha256",
+    "frame_index",
+    "timestamp_sec",
+    "cohort"
+  ]
+}

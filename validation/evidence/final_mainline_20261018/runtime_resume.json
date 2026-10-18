@@ -1,0 +1,8 @@
+{
+  "reason": "16 logical CPUs available; resume own content-hash cache at 8 workers with BLAS/OpenMP=1",
+  "old_workers": 4,
+  "new_workers": 8,
+  "completed_own_cache_files": 241,
+  "algorithm_or_parameters_changed": false,
+  "historical_cache_used": false
+}

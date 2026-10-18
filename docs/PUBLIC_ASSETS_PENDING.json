@@ -1,0 +1,431 @@
+{
+  "date": "2026-10-18",
+  "new_raw_JPEG_masks_public_bytes": 3921199,
+  "remaining_full39_image_mask_bundle": {
+    "total_frames": 790,
+    "public_frames": 27,
+    "remaining_frames": 763,
+    "source": "laboratory frozen C_joint frame pool; full release not authorized in this increment",
+    "proposed_distribution": "Separate reviewed dataset or GitHub Release asset, keeping repository lightweight",
+    "status": "awaiting maintainer decision"
+  },
+  "segmentation_weights": {
+    "name": "INIT UNet3Plus + EfficientNet-B0 3-class model.safetensors",
+    "bytes": 52246340,
+    "sha256": "981aa596e8906edc4457219581c606d4a5a22bfc6f7e4924d3d9a4b9aff64464",
+    "source": "Project INIT epoch-13 export; architecture already tracked",
+    "purpose": "Level 2: raw video to aligned class mask",
+    "proposed_distribution": "Reviewed GitHub Release binary asset plus SHA256 verification and real download URL",
+    "status": "NOT uploaded; training provenance/redistribution scope require explicit maintainer decision"
+  },
+  "raw_videos": {
+    "locally_found": 79,
+    "frozen_video_keys": 79,
+    "bytes": 753212843,
+    "source": "Laboratory silicone simulator acquisitions; current frozen original video names",
+    "purpose": "Full Level 2 and independent segmentation replay",
+    "proposed_distribution": "First review the two videos of the public complete group; publish separately from Git as a Release or dataset asset",
+    "status": "NOT uploaded; explicit video publication decision required",
+    "public_group_video_names": [
+      "GP_Is_10.5mm_closed_R5_single_refY_004.mp4",
+      "GP_Is_10.5mm_closed_R5_single_refY_005.mp4"
+    ]
+  },
+  "video_inventory": [
+    {
+      "video": "GP_IIa_14.0mm_closed_R10_single_refY_004.mp4",
+      "bytes": 12343908,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_14.0mm_closed_R10_single_refY_005.mp4",
+      "bytes": 10247949,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_14.0mm_closed_R5_single_refY_004.mp4",
+      "bytes": 10339410,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_14.0mm_closed_R5_single_refY_005.mp4",
+      "bytes": 9903617,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_22.0mm_closed_R10_single_refY_005.mp4",
+      "bytes": 13091863,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_22.0mm_closed_R10_single_refY_006.mp4",
+      "bytes": 7835141,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_22.0mm_closed_R5_single_refY_004.mp4",
+      "bytes": 11006916,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_22.0mm_closed_R5_single_refY_005.mp4",
+      "bytes": 7728940,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_4.5mm_closed_R10_single_refY_004.mp4",
+      "bytes": 12987750,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_4.5mm_closed_R10_single_refY_005.mp4",
+      "bytes": 7178880,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_5.2mm_closed_R10_single_refY_001.mp4",
+      "bytes": 8895424,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_5.2mm_closed_R10_single_refY_004.mp4",
+      "bytes": 10899214,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_9.5mm_closed_R10_single_refY_004.mp4",
+      "bytes": 13216071,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_9.5mm_closed_R10_single_refY_005.mp4",
+      "bytes": 15095571,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_9.5mm_closed_R5_single_refY_004.mp4",
+      "bytes": 8869568,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_IIa_9.5mm_closed_R5_single_refY_005.mp4",
+      "bytes": 14947147,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_10.3mm_closed_R5_single_refY_004.mp4",
+      "bytes": 11028718,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_10.3mm_closed_R5_single_refY_005.mp4",
+      "bytes": 11963993,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_12.0mm_closed_R10_single_refY_004.mp4",
+      "bytes": 13544782,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_12.0mm_closed_R10_single_refY_005.mp4",
+      "bytes": 9183935,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_12.0mm_closed_R5_single_refY_004.mp4",
+      "bytes": 12900319,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_12.0mm_closed_R5_single_refY_005.mp4",
+      "bytes": 9955430,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_2.9mm_closed_R10_single_refY_004.mp4",
+      "bytes": 8265541,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_2.9mm_closed_R10_single_refY_005.mp4",
+      "bytes": 10344511,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_2.9mm_closed_R5_single_refY_004.mp4",
+      "bytes": 6441145,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_2.9mm_closed_R5_single_refY_005.mp4",
+      "bytes": 7062171,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_20.0mm_closed_R10_single_refY_004.mp4",
+      "bytes": 11367918,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_20.0mm_closed_R10_single_refY_005.mp4",
+      "bytes": 7959111,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_4.0mm_closed_R10_single_refY_004.mp4",
+      "bytes": 10557836,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_4.0mm_closed_R10_single_refY_005.mp4",
+      "bytes": 9489869,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_4.0mm_closed_R5_single_refY_005.mp4",
+      "bytes": 9901029,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_4.0mm_closed_R5_single_refY_006.mp4",
+      "bytes": 12579111,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_4.0mm_closed_R5_single_refY_007.mp4",
+      "bytes": 12979777,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_4.7mm_closed_R5_single_refY_004.mp4",
+      "bytes": 9479999,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_4.7mm_closed_R5_single_refY_005.mp4",
+      "bytes": 11727708,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_5.6mm_closed_R10_single_refY_004.mp4",
+      "bytes": 6582482,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_5.6mm_closed_R10_single_refY_005.mp4",
+      "bytes": 8592521,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_6.2mm_closed_R10_single_refY_004.mp4",
+      "bytes": 8009666,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_6.2mm_closed_R10_single_refY_005.mp4",
+      "bytes": 5455183,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_6.2mm_closed_R5_single_refY_004.mp4",
+      "bytes": 11685298,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_6.2mm_closed_R5_single_refY_005.mp4",
+      "bytes": 9851963,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_6.4mm_closed_R10_single_refY_005.mp4",
+      "bytes": 5955164,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_6.4mm_closed_R10_single_refY_006.mp4",
+      "bytes": 5119352,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_7.1mm_closed_R10_single_refY_004.mp4",
+      "bytes": 6289996,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_7.1mm_closed_R10_single_refY_005.mp4",
+      "bytes": 11556663,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_8.8mm_closed_R10_single_refY_004.mp4",
+      "bytes": 7902515,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_8.8mm_closed_R10_single_refY_005.mp4",
+      "bytes": 6654527,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_8.8mm_closed_R5_single_refY_004.mp4",
+      "bytes": 9477078,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_8.8mm_closed_R5_single_refY_005.mp4",
+      "bytes": 9467538,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_9.7mm_closed_R5_single_refY_004.mp4",
+      "bytes": 12684144,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Ip_9.7mm_closed_R5_single_refY_005.mp4",
+      "bytes": 6568919,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_10.5mm_closed_R10_single_refY_004.mp4",
+      "bytes": 13294990,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_10.5mm_closed_R10_single_refY_005.mp4",
+      "bytes": 9333995,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_10.5mm_closed_R5_single_refY_004.mp4",
+      "bytes": 10612543,
+      "in_public_multivideo_group": true
+    },
+    {
+      "video": "GP_Is_10.5mm_closed_R5_single_refY_005.mp4",
+      "bytes": 8277456,
+      "in_public_multivideo_group": true
+    },
+    {
+      "video": "GP_Is_14.0mm_closed_R10_single_refY_004.mp4",
+      "bytes": 10944600,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_14.0mm_closed_R10_single_refY_005.mp4",
+      "bytes": 11161733,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_14.0mm_closed_R5_single_refY_004.mp4",
+      "bytes": 6703894,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_14.0mm_closed_R5_single_refY_005.mp4",
+      "bytes": 6270323,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_18.0mm_closed_R10_single_refY_004.mp4",
+      "bytes": 10141785,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_18.0mm_closed_R10_single_refY_005.mp4",
+      "bytes": 8296361,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_18.0mm_closed_R5_single_refY_004.mp4",
+      "bytes": 9613145,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_18.0mm_closed_R5_single_refY_005.mp4",
+      "bytes": 10520785,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_4.8mm_closed_R10_single_refY_004.mp4",
+      "bytes": 8911494,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_4.8mm_closed_R10_single_refY_005.mp4",
+      "bytes": 8636824,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_4.8mm_closed_R5_single_refY_004.mp4",
+      "bytes": 8548767,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_4.8mm_closed_R5_single_refY_005.mp4",
+      "bytes": 6186439,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_6.5mm_closed_R10_single_refY_004.mp4",
+      "bytes": 6675049,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_6.5mm_closed_R10_single_refY_005.mp4",
+      "bytes": 7306727,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_7.0mm_closed_R5_single_refY_004.mp4",
+      "bytes": 5433128,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_7.0mm_closed_R5_single_refY_005.mp4",
+      "bytes": 10715406,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_7mm_closed_R10_single_refY_004.mp4",
+      "bytes": 7669278,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_7mm_closed_R10_single_refY_005.mp4",
+      "bytes": 5956283,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_8.8mm_closed_R10_single_refY_004.mp4",
+      "bytes": 7451243,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_8.8mm_closed_R10_single_refY_005.mp4",
+      "bytes": 12094971,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_8.8mm_closed_R5_single_refY_004.mp4",
+      "bytes": 9773625,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_8.8mm_closed_R5_single_refY_005.mp4",
+      "bytes": 8296871,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_9.79mm_closed_R10_single_refY_004.mp4",
+      "bytes": 10024584,
+      "in_public_multivideo_group": false
+    },
+    {
+      "video": "GP_Is_9.79mm_closed_R10_single_refY_005.mp4",
+      "bytes": 11187263,
+      "in_public_multivideo_group": false
+    }
+  ]
+}

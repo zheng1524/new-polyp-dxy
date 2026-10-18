@@ -1,0 +1,2 @@
+coverage,median_absolute_error_pct,MAE_mm,mean_absolute_relative_error_pct,median_signed_error_pct,within5_pct,within10_pct,p90_pct,p95_pct,max_pct,mainline_id,coverage_text,base_38_mainline,Ip8_extension
+39,4.576785747901178,0.6133636944290839,6.5045047764220785,0.8665835816920938,53.84615384615385,76.92307692307693,14.772742239095084,19.26331970491887,23.685498698929642,S5-CPAG-39,39/39,dxy_video_result_sharp5_post_capture_relaxed_area_guard_v1,raw_video_reacquisition_centerline_adapter_post_area_guard_v1

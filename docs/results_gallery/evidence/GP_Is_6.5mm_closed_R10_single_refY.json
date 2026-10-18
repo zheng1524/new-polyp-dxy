@@ -1,0 +1,712 @@
+{
+  "group_id": "GP_Is_6.5mm_closed_R10_single_refY",
+  "source_id": "05e21d3da0c31a98b5424b6193d28fbd302a0c932880346c154124980ce688b3",
+  "video": "GP_Is_6.5mm_closed_R10_single_refY_004.mp4",
+  "frame_index": 362,
+  "timestamp_sec": 2.916474441617189,
+  "image_sha256": "4728d53cd0ecb7c596990023e4378693e51cbecf8cf522c37c5f66bde38790eb",
+  "mask_sha256": "ed516b7e44dedec681508fb8cbfa4de0a9d16a5035755b66acbfb44a865b259c",
+  "selected_from_actual_aggregation": true,
+  "representative_rule": "Closest frame to each video median, then video median closest to group; chronological/video-ID tie-break; no GT",
+  "frame_Dxy_mm": 5.226702638626479,
+  "L_px": 150.90287063724094,
+  "L_mid_px": 323.36106872558594,
+  "scale_mm_per_px": 0.03463620417925035,
+  "endpoints": [
+    [
+      727.4684894486071,
+      192.41158701093104
+    ],
+    [
+      589.1494243654957,
+      252.73996011259754
+    ]
+  ],
+  "chosen": {
+    "shape": "ellipse",
+    "center": [
+      658.3089569070514,
+      222.5757735617643
+    ],
+    "basis": [
+      [
+        -22.652568487951775,
+        69.15953254155568
+      ],
+      [
+        -51.93712235044648,
+        -30.16418655083326
+      ]
+    ]
+  },
+  "ring": {
+    "inner": {
+      "cx": 667.3265533447266,
+      "cy": 243.01329040527344,
+      "major_radius": 139.63421630859375,
+      "minor_radius": 91.42654418945312,
+      "angle_deg": 140.3875389099121
+    },
+    "outer": {
+      "cx": 668.4163208007812,
+      "cy": 243.61746215820312,
+      "major_radius": 183.7268524169922,
+      "minor_radius": 128.20750427246094,
+      "angle_deg": 139.3511619567871
+    },
+    "centerline": {
+      "cx": 667.8714370727539,
+      "cy": 243.31537628173828,
+      "major_radius": 161.68053436279297,
+      "minor_radius": 109.81702423095703,
+      "angle_deg": -40.13064956665038
+    },
+    "branch": "visible_inner_arc_RANSAC",
+    "attempts": [
+      {
+        "branch": "visible_inner_arc_RANSAC",
+        "valid": true,
+        "center_gap_norm": 0.00770680514870483,
+        "wire_major_mm": 1.5272015470518747,
+        "wire_minor_mm": 1.2739528433439156,
+        "outer_inner_major_ratio": 1.315772432245067,
+        "angle_gap_deg": 1.036376953125,
+        "centerline_frontality": 0.6792222988609127,
+        "mask_band_recall": 0.9376719906947715,
+        "mask_band_precision": 0.9724894812722511,
+        "inner_arc_coverage": 0.9444444444444444,
+        "inner_normalized_residual": 0.00965520587856095,
+        "inner_sector_instability": 0.01193928965424007,
+        "reason": "ok"
+      }
+    ],
+    "diagnostics": {
+      "center_gap_norm": 0.00770680514870483,
+      "wire_major_mm": 1.5272015470518747,
+      "wire_minor_mm": 1.2739528433439156,
+      "outer_inner_major_ratio": 1.315772432245067,
+      "angle_gap_deg": 1.036376953125,
+      "centerline_frontality": 0.6792222988609127,
+      "mask_band_recall": 0.9376719906947715,
+      "mask_band_precision": 0.9724894812722511,
+      "inner_arc_coverage": 0.9444444444444444,
+      "inner_normalized_residual": 0.00965520587856095,
+      "inner_sector_instability": 0.01193928965424007,
+      "reason": "ok"
+    }
+  },
+  "P_count": 299,
+  "Q_count": 75,
+  "Q_original_contour_indices_verified": true,
+  "normal": true,
+  "Q_recovery": false,
+  "strict": true,
+  "group_prediction_mm": 5.423233688161809,
+  "GT_mm": 6.500000367,
+  "signed_error_pct": -16.56564027757371,
+  "checks_passed": true,
+  "Q_indices": [
+    {
+      "contour_id": 0,
+      "contour_index": 19,
+      "q": [
+        637.0,
+        171.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 20,
+      "q": [
+        636.0,
+        171.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 21,
+      "q": [
+        635.0,
+        171.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 22,
+      "q": [
+        634.0,
+        172.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 23,
+      "q": [
+        633.0,
+        172.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 24,
+      "q": [
+        632.0,
+        173.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 25,
+      "q": [
+        631.0,
+        173.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 26,
+      "q": [
+        630.0,
+        173.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 27,
+      "q": [
+        629.0,
+        174.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 28,
+      "q": [
+        628.0,
+        174.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 29,
+      "q": [
+        627.0,
+        174.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 30,
+      "q": [
+        626.0,
+        175.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 31,
+      "q": [
+        625.0,
+        175.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 32,
+      "q": [
+        624.0,
+        176.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 33,
+      "q": [
+        623.0,
+        176.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 34,
+      "q": [
+        622.0,
+        177.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 35,
+      "q": [
+        621.0,
+        177.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 36,
+      "q": [
+        620.0,
+        178.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 37,
+      "q": [
+        619.0,
+        178.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 38,
+      "q": [
+        618.0,
+        179.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 39,
+      "q": [
+        617.0,
+        179.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 40,
+      "q": [
+        616.0,
+        180.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 41,
+      "q": [
+        615.0,
+        181.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 42,
+      "q": [
+        614.0,
+        181.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 43,
+      "q": [
+        613.0,
+        182.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 44,
+      "q": [
+        612.0,
+        183.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 45,
+      "q": [
+        611.0,
+        184.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 46,
+      "q": [
+        610.0,
+        184.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 47,
+      "q": [
+        609.0,
+        185.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 48,
+      "q": [
+        608.0,
+        186.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 49,
+      "q": [
+        607.0,
+        187.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 50,
+      "q": [
+        606.0,
+        188.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 51,
+      "q": [
+        605.0,
+        189.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 52,
+      "q": [
+        604.0,
+        190.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 53,
+      "q": [
+        603.0,
+        191.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 54,
+      "q": [
+        602.0,
+        192.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 55,
+      "q": [
+        602.0,
+        193.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 56,
+      "q": [
+        601.0,
+        194.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 57,
+      "q": [
+        600.0,
+        195.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 58,
+      "q": [
+        599.0,
+        196.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 59,
+      "q": [
+        598.0,
+        197.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 60,
+      "q": [
+        598.0,
+        198.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 61,
+      "q": [
+        597.0,
+        199.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 62,
+      "q": [
+        597.0,
+        200.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 340,
+      "q": [
+        695.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 341,
+      "q": [
+        694.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 342,
+      "q": [
+        693.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 343,
+      "q": [
+        692.0,
+        169.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 344,
+      "q": [
+        691.0,
+        169.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 345,
+      "q": [
+        690.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 346,
+      "q": [
+        689.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 347,
+      "q": [
+        688.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 348,
+      "q": [
+        687.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 349,
+      "q": [
+        686.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 350,
+      "q": [
+        685.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 351,
+      "q": [
+        684.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 352,
+      "q": [
+        683.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 353,
+      "q": [
+        682.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 354,
+      "q": [
+        681.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 355,
+      "q": [
+        680.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 356,
+      "q": [
+        679.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 357,
+      "q": [
+        678.0,
+        168.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 358,
+      "q": [
+        677.0,
+        167.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 359,
+      "q": [
+        676.0,
+        167.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 360,
+      "q": [
+        675.0,
+        167.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 361,
+      "q": [
+        674.0,
+        167.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 362,
+      "q": [
+        673.0,
+        167.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 363,
+      "q": [
+        672.0,
+        167.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 364,
+      "q": [
+        671.0,
+        167.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 365,
+      "q": [
+        670.0,
+        166.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 366,
+      "q": [
+        669.0,
+        166.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 367,
+      "q": [
+        668.0,
+        166.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 368,
+      "q": [
+        667.0,
+        166.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 369,
+      "q": [
+        666.0,
+        166.0
+      ]
+    },
+    {
+      "contour_id": 0,
+      "contour_index": 370,
+      "q": [
+        665.0,
+        166.0
+      ]
+    }
+  ],
+  "figure_sha256": "b74d99c9f0c581adf1f2456072281c9a4dd35b28ff9b0b32e5cae3aa8be9d5e7",
+  "geometry_refit_for_plot": false
+}

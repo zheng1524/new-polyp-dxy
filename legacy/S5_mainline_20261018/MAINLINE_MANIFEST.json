@@ -1,0 +1,40 @@
+{
+  "mainline_id": "S5-CPAG-39",
+  "expanded_name": "Sharp5 + Capture-level Post-area Guard, 39-group scope",
+  "status": "USER_PROMOTED_FROZEN_MAINLINE",
+  "promotion_date": "2026-09-23",
+  "scope": "39/39 research Dxy evaluation groups; result/ remains untouched",
+  "base_38_groups": {
+    "source": "dxy_video_result_sharp5_post_capture_relaxed_area_guard_v1",
+    "rule": "frozen raw result_sharp5 plus post-capture relaxed area guard v1, unmodified V2/scale/B1/fusion"
+  },
+  "Ip8_R10_inclusion": {
+    "group": "GP_Ip_8.8mm_closed_R10_single_refY",
+    "source": "raw_video_reacquisition_centerline_adapter_post_area_guard_v1",
+    "rule": "raw videos 004/005 re-decoded; frozen INIT rerun; only missing-inner frames use current outer+mid centerline-symmetry inner reconstruction; unmodified V2, S0-p2 post-capture guard and B1; two eligible video captures median fused",
+    "old_V2_R3_used": false
+  },
+  "not_included": "all_forced_centerline_inner_trial: rejected due 34/39 coverage",
+  "final_evaluation": {
+    "coverage": 39,
+    "median_absolute_error_pct": 4.576785747901178,
+    "MAE_mm": 0.6133636944290839,
+    "mean_absolute_relative_error_pct": 6.5045047764220785,
+    "median_signed_error_pct": 0.8665835816920938,
+    "within5_pct": 53.84615384615385,
+    "within10_pct": 76.92307692307693,
+    "p90_pct": 14.772742239095084,
+    "p95_pct": 19.26331970491887,
+    "max_pct": 23.685498698929642,
+    "mainline_id": "S5-CPAG-39",
+    "coverage_text": "39/39",
+    "base_38_mainline": "dxy_video_result_sharp5_post_capture_relaxed_area_guard_v1",
+    "Ip8_extension": "raw_video_reacquisition_centerline_adapter_post_area_guard_v1"
+  },
+  "inputs_sha256": {
+    "base_group_evaluated": "79af6f429e5b868d36d863506d3180d2591b23258df526985e4efd3f5f4e5709",
+    "Ip8_group_evaluated": "11d2c9bd6b4fa852a963030c691d979fec0460461e24351d5db5937781d8c0a7",
+    "Ip8_blind_output_list": "122806fcb968d58f559430fc880250ef60147516eb4689d3c687391162d2fb20",
+    "combined_errors": "ccd098474086ed4bd5851ac7edaaf03df260a2b694a2f4c37d24f95a9a39b587"
+  }
+}

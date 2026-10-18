@@ -1,0 +1,7 @@
+group,published_frames,original_frozen_frames,published_videos,original_frozen_videos,complete_frozen_group,scope
+GP_IIa_14.0mm_closed_R10_single_refY,1,20,1,2,False,mechanism_subset_only
+GP_IIa_9.5mm_closed_R10_single_refY,1,20,1,2,False,mechanism_subset_only
+GP_Ip_4.7mm_closed_R5_single_refY,2,20,1,2,False,mechanism_subset_only
+GP_Ip_6.2mm_closed_R5_single_refY,2,20,1,2,False,mechanism_subset_only
+GP_Ip_6.4mm_closed_R10_single_refY,1,20,1,2,False,mechanism_subset_only
+GP_Is_10.5mm_closed_R5_single_refY,20,20,2,2,True,full_frozen_group

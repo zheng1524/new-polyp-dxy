@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "frames": 1,
+  "groups": 1,
+  "videos": 1,
+  "checks": [
+    {
+      "check": "identical_input_source_ids",
+      "pass_": true
+    },
+    {
+      "check": "L_px",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "scale_mm_per_px",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "L_mid_px",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "D_mm",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "axis_x1",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "axis_y1",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "axis_x2",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "axis_y2",
+      "pass_": true,
+      "mismatches": 0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "ring_valid",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "default_Gate_pass",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "Q_distance_recovery",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "stability_review_pass",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "measurement_eligible",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "ring_reason",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "quality_class",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "reason",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "stability_flags",
+      "pass_": true,
+      "mismatches": 0
+    },
+    {
+      "check": "group_mapping",
+      "pass_": true
+    },
+    {
+      "check": "video_mapping",
+      "pass_": true
+    },
+    {
+      "check": "video_medians",
+      "pass_": true,
+      "n": 1,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "group_medians",
+      "pass_": true,
+      "n": 1,
+      "max_abs_delta": 0.0
+    },
+    {
+      "check": "zero_historical_fallback",
+      "pass_": true
+    }
+  ],
+  "actual_counts": {
+    "numeric": 1,
+    "ring_failed": 0,
+    "normal": 1,
+    "Q_recovery": 0,
+    "strict": 1
+  }
+}

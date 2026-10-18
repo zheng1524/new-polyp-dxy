@@ -1,0 +1,50 @@
+[
+  {
+    "original_path": "mainline/CURRENT_POINTER.md",
+    "archive_path": "legacy/S5_mainline_20261018/CURRENT_POINTER.md",
+    "sha256": "dd638894588976580054c38a9048dedc6879fc5a194ae8ff45b03c30e750bfc6",
+    "exact_preservation": true
+  },
+  {
+    "original_path": "mainline/ERROR_RANKING.md",
+    "archive_path": "legacy/S5_mainline_20261018/ERROR_RANKING.md",
+    "sha256": "afba4ad74440ab5893312fa0fe1d08092db030f9e7a50a10c00c488ff9026835",
+    "exact_preservation": true
+  },
+  {
+    "original_path": "mainline/MAINLINE_MANIFEST.json",
+    "archive_path": "legacy/S5_mainline_20261018/MAINLINE_MANIFEST.json",
+    "sha256": "1f69c7f18b19645dfad36b1ae0689b220a043270207876eab8005748c2fb6096",
+    "exact_preservation": true
+  },
+  {
+    "original_path": "mainline/README.md",
+    "archive_path": "legacy/S5_mainline_20261018/README.md",
+    "sha256": "2634ed95561e92867dd4230b2f65691b88600c3e9028b6011cb6d29b6ddcf50c",
+    "exact_preservation": true
+  },
+  {
+    "original_path": "mainline/figures/group_abs_error_descending.png",
+    "archive_path": "legacy/S5_mainline_20261018/figures/group_abs_error_descending.png",
+    "sha256": "e605544db930f5069d93676bde98d83bab7471785f73932937504f018c27818a",
+    "exact_preservation": true
+  },
+  {
+    "original_path": "mainline/scripts/build_mainline.py",
+    "archive_path": "legacy/S5_mainline_20261018/scripts/build_mainline.py",
+    "sha256": "70d901cb5b86c5ba66e565c05c311c66cced58d7c08b8937976271128dd94c74",
+    "exact_preservation": true
+  },
+  {
+    "original_path": "mainline/tables/group_errors_descending.csv",
+    "archive_path": "legacy/S5_mainline_20261018/tables/group_errors_descending.csv",
+    "sha256": "ccd098474086ed4bd5851ac7edaaf03df260a2b694a2f4c37d24f95a9a39b587",
+    "exact_preservation": true
+  },
+  {
+    "original_path": "mainline/tables/metrics_summary.csv",
+    "archive_path": "legacy/S5_mainline_20261018/tables/metrics_summary.csv",
+    "sha256": "159bf1f8e38ee5a976344e5cff549b2459c2a5c67306dddf87dcf0fe374e00ea",
+    "exact_preservation": true
+  }
+]
