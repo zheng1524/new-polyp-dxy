@@ -13,9 +13,11 @@ jobs:
         with:
           python-version: '3.10'
           cache: pip
-      - run: pip install '.[plot,test]'
+      - run: pip install '.[plot,test,report]'
       - run: python -c 'import dxy_mid; print(dxy_mid.__version__)'
       - run: python -m unittest discover -s tests -v
+      - name: Verify official 39-group CSV and Excel tables
+        run: python mainline/scripts/build_mainline.py --check
       - run: dxy-mid measure --manifest examples/mask_demo/frames.csv --output outputs/ci-demo --workers 1
       - run: python scripts/verify_regression.py --actual outputs/ci-demo/frames.csv --expected examples/mask_demo/expected.csv --output outputs/ci-demo/regression.json
       - name: Reproduce the public real Ring failure (NaN is expected)

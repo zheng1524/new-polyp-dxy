@@ -17,6 +17,7 @@ dependencies = [
 plot = ["matplotlib==3.9.2"]
 video = ["torch==2.5.1", "torchvision==0.20.1", "transformers==4.46.3", "safetensors==0.4.5"]
 test = ["pytest==8.3.5"]
+report = ["openpyxl==3.1.5"]
 
 [project.scripts]
 dxy-mid = "dxy_mid.cli:main"

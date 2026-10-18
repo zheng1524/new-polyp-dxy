@@ -1,19 +1,10 @@
-# 当前 Dxy 视频测量研究主线
+# 当前唯一正式主线：DXY-MID
 
-当前冻结主线为：
+V9.1 Geometry + 原图Mid Scale + 逐帧毫米→视频中位→组级视频等权中位。2026-10-18人工正式晋升。
 
-`S5-CPAG-39`（Sharp5 + Capture-level Post-area Guard，39组范围）
+- [机器可读定义](MAINLINE_MANIFEST.json)
+- [39组CSV](tables/group_results.csv) / [39组Excel](tables/group_results.xlsx)
+- [逐视频结果](tables/video_results.csv) / [逐帧结果](../validation/results/frame_measurements.csv)
+- 测量入口：`dxy-mid measure`；表格校验：`python mainline/scripts/build_mainline.py --check`。
 
-入口与不可变定义：
-
-- [39组机器可读 manifest](MAINLINE_MANIFEST.json)
-- [39组误差排序与图](ERROR_RANKING.md)
-- [39组排序 CSV](tables/group_errors_descending.csv)
-- [基础38组规则与验证](../base38/DXY_VIDEO_MAINLINE_V1.md)
-- [基础38组统一规则审计](../base38/S5_UNIFIED_RULE_AUDIT.md)
-
-38 个基础组规则：先按冻结 raw `result_sharp5` 选择每个bin的最高 sharpness 帧；仅当一个capture的原始已选帧中位面积支持落入正式S0 p2极低尾时，才对该capture内自身低支持帧做同bin、同候选池的宽松重选。V2、scale、B1和正式融合不变。
-
-Ip8 R10 为此前唯一未覆盖组：它以两段原始视频重采集、冻结 INIT 和 outer+mid 中心线内环补全获得独立视频预测；旧 V2 R3 未使用。该扩展的完整定义和 SHA 位于 39组 manifest。
-
-该研究主线不覆盖历史 `result/` 包；二者范围不同。
+历史S5完整旧入口已原样归档到[legacy](../legacy/S5_mainline_20261018/)。它不再是默认主线，也不参与失败补齐。

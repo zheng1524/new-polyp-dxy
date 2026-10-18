@@ -6,7 +6,7 @@
 
 | 历史内容 | 原位置 | 当前角色 |
 |---|---|---|
-| S5/CPAG与V2旧整套测量 | `src/dxy_s5cpag`, `base38`, `ip88_extension`, `mainline`, `scripts/run_raw_selector.py` | 仅归档，旧S5包含历史融合，不能称DXY-MID独立覆盖 |
+| S5/CPAG与V2旧整套测量 | `src/dxy_s5cpag`, `base38`, `ip88_extension`, `legacy/S5_mainline_20261018`, `scripts/run_raw_selector.py` | 仅归档，旧S5包含历史融合，不能称DXY-MID独立覆盖 |
 | D-G3研究 | `src/dxy_dg3`, `dg3` | 未晋升的研究记录与既有授权素材 |
 | 共享Ring/图像工具 | `src/polypseg` | 保留旧API；DXY-MID数值入口不依赖其实验IO |
 | 原首页与原源码闭包审计 | `legacy/S5_README.md`, `SOURCE_CLOSURE_AUDIT.md` | 只描述历史S5版本 |

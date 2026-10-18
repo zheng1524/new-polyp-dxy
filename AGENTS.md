@@ -3,6 +3,7 @@
 用户明确的当前任务范围与授权优先。
 
 - 唯一正式推荐入口为`dxy-mid` / `python -m dxy_mid`：V9.1 Geometry + 原图Mid Scale + 视频等权中位聚合。
+- 机器可读正式主线为`mainline/MAINLINE_MANIFEST.json`中的DXY-MID；`mainline/scripts/build_mainline.py`仅导出/校验本主线冻结数值表，不执行S5聚合。S5旧mainline和旧方法测试已退役归档，不能作为默认入口。
 - 保持冻结数学行为。新算法研究使用独立实验目录，不覆盖冻结预测、输入、权重及研究记录。
 - 新预测只能来自当前图像、mask及已知参考环尺寸。历史S5/G3/DG3/R2/V2最终预测只能对照，不能填补失败；底层源码和核验过的分割缓存可复用。
 - Q锚定原始息肉轮廓；可观察P、软约束Q和推断轮廓须区分。保留Normal、Q恢复、Strict及具体失败原因，不把数值输出等同于正确测量。

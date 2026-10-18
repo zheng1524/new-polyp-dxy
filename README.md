@@ -2,7 +2,11 @@
 
 DXY-MID是本仓库唯一推荐的测量Pipeline：**V9.1 Geometry + Mid Scale + 视频等权中位聚合**。它从当前图像及多类分割mask独立计算直径，保留可信边界P、遮挡弱约束Q、质量诊断和真实失败，不读取S5/G3等历史直径补齐结果。
 
-本版本是主线迁移的可审查候选（`1.0.0rc1`）。仓库现含既有单帧样例及新增**6组27帧真实JPEG与同帧mask**，包括一组两段视频的全部20个冻结选帧，可直接重算完整组级结果。完整790帧、冻结权重及原视频的分发状态详见[发布依赖审查](docs/DISTRIBUTION_REVIEW.md)。本分支不宣称全数据集两级外部可复现。
+DXY-MID已由人工确立为唯一正式主线，机器可读入口见[CURRENT_POINTER](mainline/CURRENT_POINTER.md)及[MAINLINE_MANIFEST](mainline/MAINLINE_MANIFEST.json)。为保证逐帧回归，保留冻结实现标识`1.0.0rc1`；它不表示仍处于候选主线状态。
+
+**[39组完整Excel下载](mainline/tables/group_results.xlsx?raw=true)** · [39组CSV](mainline/tables/group_results.csv) · [逐视频结果](mainline/tables/video_results.csv) · [790帧与质量标记](validation/results/frame_measurements.csv)。有符号误差为`prediction − GT`，负值低估，正值高估。
+
+仓库含既有单帧样例及**6组27帧真实JPEG与同帧mask**，其中一组提供两视频的全部20个冻结选帧。完整790帧、冻结权重及原视频仍有[分发限制](docs/DISTRIBUTION_REVIEW.md)，正式主线发布不等于全数据集Level 2已公开。
 
 39组来自硅胶模型回顾性研究，不能解释为临床泛化性能。GT为人工确认的可信尺寸基准，只在独立评价阶段读取，不参与预测生成或算法选择。
 
