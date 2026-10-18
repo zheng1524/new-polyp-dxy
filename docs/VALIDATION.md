@@ -2,6 +2,8 @@
 
 正式入口为`dxy-mid`及`dxy_mid`。`src/dxy_mid/_engine/`是当前正式实现，模块名不等于可删除的旧算法；分割架构位于`model_code/init_segmentation/`。当前源码SHA256见[SOURCE_PROVENANCE.csv](SOURCE_PROVENANCE.csv)。
 
+[最近一次干净安装与790帧回归](../validation/evidence/current_validation.json)确认逐帧、Ring、视频与组级结果保持一致；公开样例及图集检查通过。
+
 ## 冻结基准
 
 - [790帧输入与哈希](../validation/frozen39/inputs.csv)，同帧原图/mask独立计算。

@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-18",
+  "installation": "fresh Python 3.10 virtualenv; wheel-installed, no host PYTHONPATH during final replay",
+  "installed_measurement_packages": [
+    "dxy_mid"
+  ],
+  "numerical_source_fingerprint": "a0297fd1028025075c1867e377c519e7207ea0d4296b62657bba21d95ca3bf3d",
+  "fresh_full39_computation": true,
+  "fresh_output_initially_empty": true,
+  "final_same_source_cache_replay_in_clean_environment": true,
+  "full39": {
+    "passed": true,
+    "frames": 790,
+    "groups": 39,
+    "videos": 77,
+    "checks": [
+      {
+        "check": "identical_input_source_ids",
+        "pass_": true
+      },
+      {
+        "check": "L_px",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 8.526512829121202e-14
+      },
+      {
+        "check": "scale_mm_per_px",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 0.0
+      },
+      {
+        "check": "L_mid_px",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 8.526512829121202e-14
+      },
+      {
+        "check": "D_mm",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 7.105427357601002e-15
+      },
+      {
+        "check": "axis_x1",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 2.842170943040401e-14
+      },
+      {
+        "check": "axis_y1",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 5.684341886080802e-14
+      },
+      {
+        "check": "axis_x2",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 2.842170943040401e-14
+      },
+      {
+        "check": "axis_y2",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 5.684341886080802e-14
+      },
+      {
+        "check": "P_count",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 0.0
+      },
+      {
+        "check": "Q_count",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 0.0
+      },
+      {
+        "check": "ring_valid",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "default_Gate_pass",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "Q_distance_recovery",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "stability_review_pass",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "measurement_eligible",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "ring_reason",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "quality_class",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "reason",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "stability_flags",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "body",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "shape",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "group_mapping",
+        "pass_": true
+      },
+      {
+        "check": "video_mapping",
+        "pass_": true
+      },
+      {
+        "check": "video_medians",
+        "pass_": true,
+        "n": 77,
+        "max_abs_delta": 3.552713678800501e-15
+      },
+      {
+        "check": "group_medians",
+        "pass_": true,
+        "n": 39,
+        "max_abs_delta": 3.552713678800501e-15
+      },
+      {
+        "check": "zero_historical_fallback",
+        "pass_": true
+      }
+    ],
+    "actual_counts": {
+      "numeric": 757,
+      "ring_failed": 33,
+      "normal": 627,
+      "Q_recovery": 130,
+      "strict": 616
+    }
+  },
+  "ring_geometry": {
+    "passed": true,
+    "frames": 790,
+    "max_abs_parameter_delta": 0.0,
+    "differences": []
+  },
+  "metrics": {
+    "scope": "39 silicone-model retrospective groups; exploratory, not clinical generalization",
+    "target_groups": 39,
+    "numeric_groups": 39,
+    "failed_groups": [],
+    "historical_prediction_fallback": 0,
+    "GT_used_to_select_algorithm": false,
+    "median_absolute_relative_error_pct": 4.4113269936186095,
+    "MAE_mm": 0.7092238117097176,
+    "p95_absolute_relative_error_pct": 14.726267315399115,
+    "max_absolute_relative_error_pct": 16.56564027757371,
+    "within10pct": 30
+  },
+  "public_mask_cli": true,
+  "public_ring_failure": true,
+  "complete_two_video_reproduction": true,
+  "lightweight_tests": {
+    "passed": 19,
+    "optional_full_data_test_skipped": 1,
+    "full_data_verified_separately": true
+  },
+  "official_tables_and_11_gallery_checks": true,
+  "local_markdown_links": {
+    "checked": 93,
+    "broken": 0
+  },
+  "frozen_predictions_GT_and_numerical_source_unchanged": true,
+  "frozen_results_sha256": {
+    "mainline/tables/group_results.csv": "9af10ba20a7435242265cf845c657197bec1163ea4ba5c914d9cc6f3ac1aead9",
+    "mainline/tables/group_results.xlsx": "1f104bd748e86169b993736da81fcb628e41a19a0750cb524098662fabe3801e",
+    "mainline/tables/metrics_summary.csv": "afe2abcf18ea18e067b2edef2ffa1b9caf8c9b7a3e79a032251e6e4b39217225",
+    "mainline/tables/video_results.csv": "398bed800b053ee1328dea92e293a3f6bb642f0bc62eb4f7d9b15dd67a31c06b"
+  }
+}
