@@ -1,0 +1,9 @@
+{
+  "scope": "virtual-image derivatives only; no model/video/weight upload in this release",
+  "pending": [
+    {"asset": "Ip4/Is14/IIa6.5 source CAD and reused scene materials", "reason": "local source hashes verified; public redistribution permission not recorded"},
+    {"asset": "Figure1, Figure2, Figure4a/b and fitting supplementary PNGs", "purpose": "original RGB/Mask and actual fitted shape inspection", "reason": "contains source-model/material derivatives; awaiting maintainer clarification"},
+    {"asset": "original Blender scenes, RGB and Oracle masks", "purpose": "original-image end-to-end scene reproduction", "reason": "not included in this small numeric/theory publication"}
+  ],
+  "unchanged_restrictions": "full real inputs, original videos and segmentation weights follow docs/DISTRIBUTION_REVIEW.md"
+}

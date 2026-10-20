@@ -37,6 +37,12 @@ D_{\mathrm{video}}=\operatorname{median}(D_i),\quad D_{\mathrm{group}}=\operator
 
 [完整过程图](docs/visualization/README.md)展示Ring恢复、P/Q、主体候选、Q恢复及硬失败，附真实点位与数值证据。
 
+### 数学理论与误差传播分析
+
+正式主线使用Mid长轴标量尺度。我们另外对Mid-Area、Chosen-Axis Affine和Whole-Shape Affine作数学对照，在V2固定九场景（3个CAD模型）中研究尺度差异及Mask扰动的连续传播与候选非线性跳变。C的MAE更低等不同方向的结果一并保留；B/C/D仅为理论对照，不是正式CLI选项，不改变39组指标。
+
+[数学理论与误差传播](docs/theory/README.md)提供推导、精简CSV和NumPy轻量复算；CSV复算与原始场景端到端测量的范围分别说明。
+
 ## 安装与运行
 
 Ubuntu / Python 3.10；已有mask的测量不需要GPU或Torch。

@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-20",
+  "math": {
+    "status": "PASS",
+    "algebra": {
+      "random_cases": 1000,
+      "spectral_formula_max_mm_difference": 4.440892098500626e-15,
+      "C_gradient_max_abs_difference": 1.6193807406139626e-10
+    },
+    "data": {
+      "N0_metrics": [
+        {
+          "method": "A",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 4.798922912161346,
+          "MAE_mm": 0.5616870988822469,
+          "mean_ARE_pct": 6.820966024008628,
+          "median_signed_pct": -4.798922912161346,
+          "p95_ARE_pct": 14.007551128056084,
+          "max_ARE_pct": 15.881375483366666,
+          "improved_vs_A": 0
+        },
+        {
+          "method": "B",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 14.622976380634963,
+          "MAE_mm": 0.9565270330164761,
+          "mean_ARE_pct": 11.719433859827546,
+          "median_signed_pct": 14.622976380634963,
+          "p95_ARE_pct": 18.852241591994304,
+          "max_ARE_pct": 19.922376335202063,
+          "improved_vs_A": 2
+        },
+        {
+          "method": "C",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 6.997369081398286,
+          "MAE_mm": 0.48723446966220824,
+          "mean_ARE_pct": 5.814495665873559,
+          "median_signed_pct": -3.3597123162599893,
+          "p95_ARE_pct": 10.063256953982293,
+          "max_ARE_pct": 10.540740181977858,
+          "improved_vs_A": 8
+        },
+        {
+          "method": "D",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 14.834797131088328,
+          "MAE_mm": 1.0290741560341603,
+          "mean_ARE_pct": 14.443863254202812,
+          "median_signed_pct": 14.834797131088328,
+          "p95_ARE_pct": 32.2587585844891,
+          "max_ARE_pct": 36.936155750849984,
+          "improved_vs_A": 4
+        }
+      ],
+      "scenes": 9,
+      "source_models": 3,
+      "trial_rows": 927,
+      "random_rows": 720,
+      "numeric_failures": 0,
+      "distribution_rows_checked": 144,
+      "propagation_max_abs_log_residual": 1.1072467626067417e-15,
+      "geometry_or_image_recomputed": false
+    },
+    "scope": "mathematics and published CSV recomputation only; no original scene end-to-end measurement"
+  },
+  "isolated_public_only_math": "PASS",
+  "existing_unit_tests": {
+    "run": 20,
+    "passed": 19,
+    "skipped": 1,
+    "skip_reason": "full39 unittest not configured; separate explicit full39 run below"
+  },
+  "public_real_mask": "PASS via current automatic tests",
+  "complete_public_multivideo": "PASS: 20 frames, two videos, frozen group aggregation",
+  "official39_CSV_Excel_check": "PASS",
+  "official39_frozen_metrics": {
+    "median_ARE_pct": 4.4113269936186095,
+    "MAE_mm": 0.7092238117097175
+  },
+  "protected_files_count": 86,
+  "protected_files_unchanged": true,
+  "original_experiment_unchanged": true,
+  "relative_links_checked": 62,
+  "full39_fresh_regression": {
+    "status": "RUNNING",
+    "source": "current original images/masks; no expected predictions read until computation ends"
+  }
+}
