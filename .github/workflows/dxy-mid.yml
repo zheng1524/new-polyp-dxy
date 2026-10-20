@@ -17,6 +17,8 @@ jobs:
       - name: Verify only the formal measurement package is installed
         run: python -c 'import dxy_mid, importlib.util; assert all(importlib.util.find_spec(n) is None for n in ["dxy_s5cpag", "dxy_dg3"]); print(dxy_mid.__version__)'
       - run: python -m unittest discover -s tests -v
+      - name: Verify scale theory and published perturbation CSVs (NumPy only)
+        run: python docs/theory/verify_math.py
       - name: Verify official 39-group CSV and Excel tables
         run: python mainline/scripts/build_mainline.py --check
       - run: dxy-mid measure --manifest examples/mask_demo/frames.csv --output outputs/ci-demo --workers 1

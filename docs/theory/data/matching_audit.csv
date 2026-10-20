@@ -1,0 +1,10 @@
+scene_id,q_pass,ring_width_pass,angle_pass,ring_center_pass,polyp_area_pass,polyp_ring_size_pass,relative_center_pass,inside_mid_pass,joint_pass
+Ip4_R5_obs02,True,True,True,True,True,True,True,True,True
+Ip4_R5_obs03,True,True,True,True,True,True,True,True,True
+Ip4_R5_obs04,True,True,True,True,True,True,True,True,True
+Is14_R10_obs01,True,True,True,True,True,True,True,True,True
+Is14_R10_obs02,True,True,True,True,True,True,True,True,True
+IIa6.5_R10_obs01,True,True,True,True,True,True,True,True,True
+IIa6.5_R10_obs02,True,True,True,True,True,True,True,True,True
+IIa6.5_R10_obs03,True,True,True,True,True,True,True,True,True
+IIa6.5_R10_obs05,True,True,True,True,True,True,True,True,True

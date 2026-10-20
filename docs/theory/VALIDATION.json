@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-20",
+  "math": {
+    "status": "PASS",
+    "algebra": {
+      "random_cases": 1000,
+      "spectral_formula_max_mm_difference": 4.440892098500626e-15,
+      "C_gradient_max_abs_difference": 1.6193807406139626e-10
+    },
+    "data": {
+      "N0_metrics": [
+        {
+          "method": "A",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 4.798922912161346,
+          "MAE_mm": 0.5616870988822469,
+          "mean_ARE_pct": 6.820966024008628,
+          "median_signed_pct": -4.798922912161346,
+          "p95_ARE_pct": 14.007551128056084,
+          "max_ARE_pct": 15.881375483366666,
+          "improved_vs_A": 0
+        },
+        {
+          "method": "B",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 14.622976380634963,
+          "MAE_mm": 0.9565270330164761,
+          "mean_ARE_pct": 11.719433859827546,
+          "median_signed_pct": 14.622976380634963,
+          "p95_ARE_pct": 18.852241591994304,
+          "max_ARE_pct": 19.922376335202063,
+          "improved_vs_A": 2
+        },
+        {
+          "method": "C",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 6.997369081398286,
+          "MAE_mm": 0.48723446966220824,
+          "mean_ARE_pct": 5.814495665873559,
+          "median_signed_pct": -3.3597123162599893,
+          "p95_ARE_pct": 10.063256953982293,
+          "max_ARE_pct": 10.540740181977858,
+          "improved_vs_A": 8
+        },
+        {
+          "method": "D",
+          "n_scenes": 9,
+          "n_source_models": 3,
+          "median_ARE_pct": 14.834797131088328,
+          "MAE_mm": 1.0290741560341603,
+          "mean_ARE_pct": 14.443863254202812,
+          "median_signed_pct": 14.834797131088328,
+          "p95_ARE_pct": 32.2587585844891,
+          "max_ARE_pct": 36.936155750849984,
+          "improved_vs_A": 4
+        }
+      ],
+      "scenes": 9,
+      "source_models": 3,
+      "trial_rows": 927,
+      "random_rows": 720,
+      "numeric_failures": 0,
+      "distribution_rows_checked": 144,
+      "propagation_max_abs_log_residual": 1.1072467626067417e-15,
+      "geometry_or_image_recomputed": false
+    },
+    "scope": "mathematics and published CSV recomputation only; no original scene end-to-end measurement"
+  },
+  "isolated_public_only_math": "PASS",
+  "existing_unit_tests": {
+    "run": 20,
+    "passed": 19,
+    "skipped": 1,
+    "skip_reason": "full39 unittest not configured; separate explicit full39 run below"
+  },
+  "public_real_mask": "PASS via current automatic tests",
+  "complete_public_multivideo": "PASS: 20 frames, two videos, frozen group aggregation",
+  "official39_CSV_Excel_check": "PASS",
+  "official39_frozen_metrics": {
+    "median_ARE_pct": 4.4113269936186095,
+    "MAE_mm": 0.7092238117097175
+  },
+  "protected_files_count": 86,
+  "protected_files_unchanged": true,
+  "original_experiment_unchanged": true,
+  "relative_links_checked": 70,
+  "full39_fresh_regression": {
+    "status": "PASS",
+    "comparison_sha256": "62d12c6053724322fb52f9956f0ab814c3ad307079900770d7f6ed911ee69a27",
+    "ring_comparison_sha256": "da4548d0599c759b4d0ac8a49b8cd5d17bdd323a63587b091431d3e04b57a38e",
+    "frames": 790,
+    "groups": 39,
+    "valid_videos": 77,
+    "actual_counts": {
+      "numeric": 757,
+      "ring_failed": 33,
+      "normal": 627,
+      "Q_recovery": 130,
+      "strict": 616
+    },
+    "frame_video_group_checks": [
+      {
+        "check": "identical_input_source_ids",
+        "pass_": true
+      },
+      {
+        "check": "L_px",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 8.526512829121202e-14
+      },
+      {
+        "check": "scale_mm_per_px",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 0.0
+      },
+      {
+        "check": "L_mid_px",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 8.526512829121202e-14
+      },
+      {
+        "check": "D_mm",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 7.105427357601002e-15
+      },
+      {
+        "check": "axis_x1",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 2.842170943040401e-14
+      },
+      {
+        "check": "axis_y1",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 5.684341886080802e-14
+      },
+      {
+        "check": "axis_x2",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 2.842170943040401e-14
+      },
+      {
+        "check": "axis_y2",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 5.684341886080802e-14
+      },
+      {
+        "check": "P_count",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 0.0
+      },
+      {
+        "check": "Q_count",
+        "pass_": true,
+        "mismatches": 0,
+        "max_abs_delta": 0.0
+      },
+      {
+        "check": "ring_valid",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "default_Gate_pass",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "Q_distance_recovery",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "stability_review_pass",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "measurement_eligible",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "ring_reason",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "quality_class",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "reason",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "stability_flags",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "body",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "shape",
+        "pass_": true,
+        "mismatches": 0
+      },
+      {
+        "check": "group_mapping",
+        "pass_": true
+      },
+      {
+        "check": "video_mapping",
+        "pass_": true
+      },
+      {
+        "check": "video_medians",
+        "pass_": true,
+        "n": 77,
+        "max_abs_delta": 3.552713678800501e-15
+      },
+      {
+        "check": "group_medians",
+        "pass_": true,
+        "n": 39,
+        "max_abs_delta": 3.552713678800501e-15
+      },
+      {
+        "check": "zero_historical_fallback",
+        "pass_": true
+      }
+    ],
+    "ring_max_abs_parameter_delta": 0.0,
+    "history_prediction_fallback": 0,
+    "GT_read_for_measurement": false,
+    "source_fingerprint": "a0297fd1028025075c1867e377c519e7207ea0d4296b62657bba21d95ca3bf3d",
+    "video_equal_weight_aggregation": true,
+    "resume_cache": "only this regression run, keyed by current image/mask/source/configuration hashes",
+    "scope": "fresh Ring/Geometry/Dxy from current real input images and masks, not simulation scene regeneration"
+  }
+}

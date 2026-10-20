@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-20",
+  "source": "explicit maintainer confirmation in this release task",
+  "confirmed": "source and distribution permission for Ip4/Is14/IIa6.5 CAD and reused materials",
+  "allowed": "derived RGB/Oracle-mask/fitted-geometry PNG figures only",
+  "not_allowed": "source model files; no blanket release of Blender projects, raw RGB/masks, videos or weights",
+  "geometry_or_rendering_changed": false
+}

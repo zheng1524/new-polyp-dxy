@@ -1,0 +1,25 @@
+{
+  "scope": "derived PNGs explicitly approved; source models and complete scene assets remain unpublished",
+  "pending": [
+    {
+      "asset": "original CAD, Blender scenes and scene materials",
+      "purpose": "original scene reconstruction",
+      "reason": "maintainer authorizes derived figures but not source model files"
+    },
+    {
+      "asset": "standalone original RGB/Oracle-mask input files and complete frozen scene package",
+      "purpose": "original-image scene end-to-end measurement",
+      "reason": "this release authorizes derived PNG figures; complete raw package distribution not established"
+    }
+  ],
+  "unchanged_restrictions": "full real inputs, original videos and segmentation weights follow docs/DISTRIBUTION_REVIEW.md",
+  "approved_derived_figures": [
+    "Figure1",
+    "Figure2",
+    "Figure3",
+    "Figure4a",
+    "Figure4b",
+    "Figure5a",
+    "Figure5b"
+  ]
+}
