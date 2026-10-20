@@ -8,7 +8,7 @@
     "PENDING_ASSETS.json": "060537dde2034b194838acf41e2662418dbb8380a06a39a4973b663dd1da36d4",
     "README.md": "eef9cb836c5672d40374da1aabf69a1b77006765b9b28297dc2dad3887e9f47b",
     "SOURCE_MANIFEST.json": "84620a25d9c840908b73569c3785400df6af5b5c793c5fdd5e6d35320fd64911",
-    "VALIDATION.json": "803d58ab755bef0ce6cb2492191e1946459c10c559ea93f98be61c24b125477c",
+    "VALIDATION.json": "23a7ef2a808654e0c99a63765b256fa21583ef0c3f7a79e91c8d58220ac35889",
     "data/N4_cancellation.csv": "e3e41bf251813750a85e69a1d58a836fd7d252768886150e1cb65dbb7fea32c9",
     "data/log_variance_decomposition.csv": "726740cf2cfb85514d83cc1c95c66fdf651465d417eb73341718f63b60a69417",
     "data/matching_audit.csv": "72c50f04d129798e929ba16c9bdbb205b46d34ea1557ca439951436ea4632dba",
@@ -31,5 +31,5 @@
     "scale_recovery.md": "67c4480519d0726c468b1a135fddaab8589ddc49f52abd39fa4d93f6ab490bc0",
     "verify_math.py": "6689ada7abd00d3462e587bddc083137632f86e1ec91af0a916f78d55324fa3d"
   },
-  "total_file_bytes_without_this_manifest": 10220200
+  "total_file_bytes_without_this_manifest": 10224025
 }
