@@ -42,7 +42,13 @@ N4共同放大后，七场景基本抵消，两个Is14场景的A中位变化却�
 
 [全部九场景Accuracy分布](figures/Figure5a_accuracy_distributions.png)与[Sensitivity分布](figures/Figure5b_sensitivity_distributions.png)分别描述对GT的误差与对N0的变化。图中的5%–95%是20次重复的经验分位，不是临床置信区间。
 
-图片与资产分发范围见[分发说明](DISTRIBUTION.md)；每幅公开图片的来源及SHA256见[图片索引](figures/index.csv)。
+原始RGB/Mask派生图现已获维护者确认公开许可（模型原文件不公开）：
+
+- [Figure1：九场景原始总览](figures/Figure1_nine_scene_review.png)，包括Ring位置及原联合通过身份。
+- [Figure2：九场景N0实际拟合](figures/Figure2_nine_N0_fits.png)，展示冻结API的Mid、P/Q、chosen与原图测量轴。
+- [Figure4a：明显非线性案例](figures/Figure4a_fixed_propagation.png)和[Figure4b：近似抵消对照](figures/Figure4b_fixed_propagation.png)，保留真实Mask及对应实际拟合，不重新渲染。
+
+图中绿色P、青色Q、橙色Mid、粉色chosen、黄色原图测量轴；Q来自各次输入的原始polyp轮廓。完整图像来源与许可范围见[分发说明](DISTRIBUTION.md)；每幅公开图片的来源及SHA256见[图片索引](figures/index.csv)。
 
 ## 数据与复算
 

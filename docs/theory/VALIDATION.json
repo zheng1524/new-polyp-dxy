@@ -86,7 +86,7 @@
   "protected_files_count": 86,
   "protected_files_unchanged": true,
   "original_experiment_unchanged": true,
-  "relative_links_checked": 62,
+  "relative_links_checked": 70,
   "full39_fresh_regression": {
     "status": "RUNNING",
     "source": "current original images/masks; no expected predictions read until computation ends"

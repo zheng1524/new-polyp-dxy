@@ -144,6 +144,14 @@ def check_data(data):
         sv = np.linalg.svd(body, compute_uv=False)
         close(2*sv[0],L)
         close(sv,[number(r,'body_a_px'),number(r,'body_b_px')])
+        unit=direction/np.linalg.norm(direction)
+        close(body@body.T@unit,sv[0]**2*unit,atol=5e-7,rtol=5e-10)
+        close([(number(r,'axis_x1')+number(r,'axis_x2'))/2,(number(r,'axis_y1')+number(r,'axis_y2'))/2],
+              [number(r,'body_center_x_px'),number(r,'body_center_y_px')])
+        ring_direction=rotation(np.deg2rad(number(r,'ring_angle_deg')))[:,0]
+        phi=np.rad2deg(np.arccos(np.clip(abs(unit@ring_direction),0,1)))
+        close(phi,number(r,'phi_deg'),atol=1e-8)
+
         reconstructed = four_lengths(a,b,body,direction/np.linalg.norm(direction),L,number(r,'D_mid_mm'),np.deg2rad(number(r,'ring_angle_deg')))
         close(reconstructed,published)
         assert published[3]>=published[2]-1e-9 and published[2]>=published[0]-1e-9 and published[1]>=published[0]-1e-9
